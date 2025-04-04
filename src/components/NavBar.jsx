@@ -11,6 +11,10 @@ const NavBar = () => {
                     <li><a href="#" className="text-white hover:text-gray-400">Services</a></li>
                     <li><a href="#" className="text-white hover:text-gray-400">Contact</a></li>
                 </ul>
+                <div className="flex items-center space-x-4">
+                    <a href="#" className="text-white hover:text-gray-400">Login</a>
+                    <a href="#" className="text-white hover:text-gray-400">Register</a>
+                </div>
             </div>
         </nav>
     )
