@@ -6,10 +6,12 @@ import CoreServices from '../components/CoreServices';
 import PartnershipCallout from '../components/PaternBadge';
 import PartnersSection from '../components/PartnersSection'; 
 import LeadershipSection from '../components/LeadershipSection';
+import ShortAbout from '../components/ShortAbout';
 const HomePage = () => {
   return (
     <>
       <Hero />
+      <ShortAbout />
       <OurCompanies />
       <AboutUsIntro />
       <CoreServices />
