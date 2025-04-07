@@ -17,12 +17,13 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#" className="text-blue-700 hover:text-blue-900 transition-colors">Home</a>
-          <a href="#" className="text-blue-700 hover:text-blue-900 transition-colors">Partners</a>
-          <a href="#" className="text-blue-700 hover:text-blue-900 transition-colors">About Us</a>
-          <a href="#" className="text-blue-700 hover:text-blue-900 transition-colors">Contact Us</a>
-          <button className="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors">
-            Get Started
+          <a href="#" className="text-blue-700 text-xl hover:text-blue-900 transition-colors">Home</a>
+          <a href="#" className="text-blue-700 text-xl hover:text-blue-900 transition-colors">About Us</a>
+          <a href="#" className="text-blue-700 text-xl hover:text-blue-900 transition-colors">Our Companies</a>
+          <a href="#" className="text-blue-700 text-xl hover:text-blue-900 transition-colors">Services</a>
+          <a href="#" className="text-blue-700 text-xl hover:text-blue-900 transition-colors">Career</a>
+          <button className="px-4 py-2 rounded-md text-xl bg-blue-600 text-white hover:bg-blue-700 transition-colors">
+            Contact Us
           </button>
         </div>
 
@@ -71,7 +72,7 @@ const Navbar = () => {
             <button
               className="w-full mt-2 px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors"
             >
-              Get Started
+              Contact Us
             </button>
           </div>
         </div>

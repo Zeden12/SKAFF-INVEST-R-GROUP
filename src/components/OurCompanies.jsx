@@ -1,71 +1,114 @@
-import React from 'react';
-import { FaCode, FaBuilding, FaCamera, FaIndustry, FaPalette, FaShoppingCart, FaMusic, FaGraduationCap, FaFilm } from 'react-icons/fa';
+import React, { useState } from 'react';
+
+// Import your company logos (adjust paths as needed)
+import DevnexLogo from '../assets/devnex.jpg';
+import SkaffArchLogo from '../assets/skaffconstruction.jpg';
+import InzoomLogo from '../assets/inzoomcapture.jpg';
+import SkaffIndustryLogo from '../assets/skaffindustry.jpg';
+import BlueprintLogo from '../assets/blueprintgraphics.jpg';
+import MarketPlaceLogo from '../assets/skaffmarket.jpg';
+import BrandNewLogo from '../assets/skaffbrandnew.jpg';
+import RosMusicLogo from '../assets/rosmusic.jpg';
+import SIELogo from '../assets/SIE.jpg';
+import SavanaLogo from '../assets/savanafilms.jpg';
+import SkaffTvLogo from '../assets/skafftv.jpg';
+import SkaffSportLogo from '../assets/skaffsport.jpg';
 
 const companies = [
   { 
-    icon: <FaCode className="text-blue-500" size={28} />, 
     name: 'DEVNEX HiTech', 
     tagline: 'Technology Solutions',
+    logo: DevnexLogo,
+    website: 'https://devnex.com',
     bgColor: 'bg-blue-50'
   },
   { 
-    icon: <FaShoppingCart className="text-red-500" size={28} />, 
     name: 'Skaff Market Place', 
     tagline: 'E-Commerce Platform',
+    logo: MarketPlaceLogo,
+    website: 'https://skaffmarket.com',
     bgColor: 'bg-red-50'
   },
   { 
-    icon: <FaPalette className="text-pink-500" size={28} />, 
-    name: 'BluePrint Graphix', 
+    name: 'BluePrint Graphix Tech', 
     tagline: 'Design & Branding',
+    logo: BlueprintLogo,
+    website: 'https://blueprintgraphix.com',
     bgColor: 'bg-pink-50'
   },
   { 
-    icon: <FaCamera className="text-purple-500" size={28} />, 
     name: 'INZOOM Capture', 
-    tagline: 'Media Production',
+    tagline: 'Video and Photography',
+    logo: InzoomLogo,
+    website: 'https://inzoomcapture.com',
     bgColor: 'bg-purple-50'
   },
   { 
-    icon: <FaBuilding className="text-indigo-500" size={28} />, 
     name: 'Skaff Brand New', 
-    tagline: 'Brand Development',
+    tagline: 'Collection and fashion House',
+    logo: BrandNewLogo,
+    website: 'https://skaffbrandnew.com',
     bgColor: 'bg-indigo-50'
   },
   { 
-    icon: <FaGraduationCap className="text-teal-500" size={28} />, 
     name: 'SIE Programme', 
     tagline: 'Education Programs',
+    logo: SIELogo,
+    website: 'https://sieprogramme.com',
     bgColor: 'bg-teal-50'
   },
   { 
-    icon: <FaMusic className="text-yellow-500" size={28} />, 
     name: 'ROS Music', 
     tagline: 'Music Production',
+    logo: RosMusicLogo,
+    website: 'https://rosmusic.com',
     bgColor: 'bg-yellow-50'
   },
   { 
-    icon: <FaBuilding className="text-green-500" size={28} />, 
-    name: 'Skaff Arch Struct', 
+    name: 'Skaff Arch Construct', 
     tagline: 'Architectural Design',
+    logo: SkaffArchLogo,
+    website: 'https://skaffarch.com',
     bgColor: 'bg-green-50'
   },
-
   { 
-    icon: <FaIndustry className="text-orange-500" size={28} />, 
     name: 'Skaff Industry', 
     tagline: 'Industrial Solutions',
+    logo: SkaffIndustryLogo,
+    website: 'https://skaffindustry.com',
     bgColor: 'bg-orange-50'
   },
   { 
-    icon: <FaFilm className="text-amber-500" size={28} />, 
     name: 'SAVANA Films', 
     tagline: 'Film Production',
+    logo: SavanaLogo,
+    website: 'https://savanafilms.com',
     bgColor: 'bg-amber-50'
+  },
+  { 
+    name: 'Skaff TV', 
+    tagline: 'Broadcasting and Media Agency',
+    logo: SkaffTvLogo,
+    website: 'https://skafftv.com',
+    bgColor: 'bg-orange-50'
+  },
+  { 
+    name: 'Skaff Sports Club', 
+    tagline: 'Sports and Recreation',
+    logo: SkaffSportLogo,
+    website: 'https://skaffsports.com',
+    bgColor: 'bg-orange-50'
   }
 ];
 
 const OurCompanies = () => {
+  const [showAll, setShowAll] = useState(false);
+  const displayedCompanies = showAll ? companies : companies.slice(0, 10);
+
+  const handleCompanyClick = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto">
@@ -82,13 +125,19 @@ const OurCompanies = () => {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          {companies.map((company, index) => (
+          {displayedCompanies.map((company, index) => (
             <div 
               key={index} 
-              className={`${company.bgColor} p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 flex flex-col items-center text-center`}
+              className={`${company.bgColor} p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 flex flex-col items-center text-center cursor-pointer`}
+              onClick={() => handleCompanyClick(company.website)}
             >
-              <div className="mb-4 p-3 bg-white rounded-full shadow-xs">
-                {company.icon}
+              <div className="mb-4 w-20 h-20 rounded-full bg-white shadow-xs overflow-hidden flex items-center justify-center p-1 border-2 border-white">
+                <img 
+                  src={company.logo} 
+                  alt={company.name} 
+                  className="w-full h-full object-contain"
+                  style={{ objectFit: 'contain' }}
+                />
               </div>
               <h3 className="text-lg font-bold text-gray-800 mb-1">{company.name}</h3>
               <p className="text-sm text-gray-500">{company.tagline}</p>
@@ -96,11 +145,16 @@ const OurCompanies = () => {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <button className="px-6 py-3 bg-white border border-gray-200 text-blue-600 font-medium rounded-lg shadow-sm hover:shadow-md hover:bg-blue-50 transition-all">
-            Explore All Subsidiaries
-          </button>
-        </div>
+        {!showAll && companies.length > 10 && (
+          <div className="mt-12 text-center">
+            <button 
+              className="px-6 py-3 bg-white border border-gray-200 text-blue-600 font-medium rounded-lg shadow-sm hover:shadow-md hover:bg-blue-50 transition-all"
+              onClick={() => setShowAll(true)}
+            >
+              Explore All Subsidiaries ({companies.length - 10} more)
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

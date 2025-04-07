@@ -61,7 +61,19 @@ const services = [
     title: 'Film Production', 
     desc: 'Feature film and commercial production services including post-production at SAVANA Films.',
     benefits: ['Award-winning crews', '4K/8K capabilities', 'Global distribution']
-  }
+  },
+  { 
+    icon: <FaCode className="text-blue-500" size={24} />, 
+    title: 'Broadcasting Solutions',
+    desc: 'Comprehensive media broadcasting and streaming services through Skaff Media.', 
+    benefits: ['Advertsiment','Live streaming', 'Content syndication', 'Multi-platform reach']
+  },
+  { 
+    icon: <FaBuilding className="text-green-500" size={24} />, 
+    title: 'Empowering sports',
+    desc: 'Comprehensive sports management and event organization services.',
+    benefits: ['Event management', 'Athlete representation', 'Sponsorship acquisition']
+  },
 ];
 
 const WhatWeOffer = () => {

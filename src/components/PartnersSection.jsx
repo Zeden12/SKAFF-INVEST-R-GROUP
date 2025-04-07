@@ -4,16 +4,18 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 // Import your company logos (adjust paths as needed)
-import DevnexLogo from '../assets/skaff.jpg';
+import DevnexLogo from '../assets/devnex.jpg';
 import SkaffArchLogo from '../assets/skaffconstruction.jpg';
 import InzoomLogo from '../assets/inzoomcapture.jpg';
 import SkaffIndustryLogo from '../assets/skaffindustry.jpg';
 import BlueprintLogo from '../assets/blueprintgraphics.jpg';
-import MarketPlaceLogo from '../assets/skaff2.jpg';
+import MarketPlaceLogo from '../assets/skaffmarket.jpg';
 import BrandNewLogo from '../assets/skaffbrandnew.jpg';
 import RosMusicLogo from '../assets/rosmusic.jpg';
 import SIELogo from '../assets/SIE.jpg';
 import SavanaLogo from '../assets/savanafilms.jpg';
+import SkaffTvLogo from '../assets/skafftv.jpg';
+import SkaffSportLogo from '../assets/skaffsport.jpg';
 
 const OurCompanies = () => {
   const companies = [
@@ -21,11 +23,6 @@ const OurCompanies = () => {
       name: 'DEVNEX HiTech', 
       description: 'Technology Solutions',
       logo: DevnexLogo
-    },
-    { 
-      name: 'Skaff Arch Struct', 
-      description: 'Architecture & Engineering',
-      logo: SkaffArchLogo
     },
     { 
       name: 'INZOOM Capture', 
@@ -41,6 +38,21 @@ const OurCompanies = () => {
       name: 'BluePrint Graphix', 
       description: 'Design & Branding',
       logo: BlueprintLogo
+    },
+    {
+      name: 'Skaff Arch Construct', 
+      description: 'Architectural Design',
+      logo: SkaffArchLogo
+    },
+    { 
+      name: 'Skaff Construction', 
+      description: 'Construction Services',
+      logo: SkaffArchLogo
+    },
+    { 
+      name: 'Skaff Media', 
+      description: 'Media & Broadcasting',
+      logo: SkaffTvLogo
     },
     { 
       name: 'Skaff Market Place', 
@@ -66,6 +78,16 @@ const OurCompanies = () => {
       name: 'SAVANA Films', 
       description: 'Film Production',
       logo: SavanaLogo
+    },
+    { 
+      name: 'SKAFF TV', 
+      description: 'Broadcasting & Media',
+      logo: SkaffTvLogo
+    },
+    { 
+      name: 'Skaff Sport Club', 
+      description: 'Sports & Entertainment',
+      logo: SkaffSportLogo
     }
   ];
 
