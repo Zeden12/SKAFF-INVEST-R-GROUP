@@ -20,7 +20,6 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
           <NavLink 
             to="/" 
@@ -65,7 +64,6 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Mobile menu button */}
         <div className="md:hidden">
           <button
             type="button"
@@ -81,7 +79,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-white/95 backdrop-blur-sm">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">

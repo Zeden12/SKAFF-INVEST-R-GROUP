@@ -16,7 +16,6 @@ const AboutUsIntro = () => {
           </p>
         </div>
         
-        {/* Section 1 */}
         <div className="flex flex-col md:flex-row items-center mb-24 gap-12">
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-6 text-gray-800 text-left">Business Operations Made Efficient</h2>
@@ -41,7 +40,6 @@ const AboutUsIntro = () => {
           </div>
         </div>
 
-        {/* Section 2 */}
         <div className="flex flex-col md:flex-row-reverse items-center mb-24 gap-12">
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-6 text-gray-800 text-left">Trusted Global Partner For Outsourcing</h2>
@@ -66,7 +64,6 @@ const AboutUsIntro = () => {
           </div>
         </div>
 
-        {/* Section 3 */}
         <div className="flex flex-col md:flex-row items-center mb-24 gap-12">
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-6 text-gray-800 text-left">Cost-Effective Solutions For Your Business</h2>
@@ -91,7 +88,6 @@ const AboutUsIntro = () => {
           </div>
         </div>
 
-        {/* Section 4 */}
         <div className="flex flex-col md:flex-row-reverse items-center gap-12">
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-6 text-gray-800 text-left">End-to-End Support From Concept to Market</h2>

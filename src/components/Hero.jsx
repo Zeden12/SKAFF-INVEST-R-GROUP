@@ -2,14 +2,15 @@ import React, { useState, useEffect } from 'react';
 import HeroImage from '../assets/hero-image.jpg';
 import { FaPlay, FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   const [currentStat, setCurrentStat] = useState(0);
   const stats = [
-    { value: "100+", label: "Successful Deals" },
+    { value: "1000+", label: "Successful Deals" },
     { value: "12", label: "Subsidiary Companies" },
-    { value: "8", label: "Countries Operating" },
-    { value: "500+", label: "Team Members" }
+    { value: "10", label: "Countries Operating" },
+    { value: "100+", label: "Team Members" }
   ];
 
   useEffect(() => {
@@ -20,8 +21,7 @@ const Hero = () => {
   }, [stats.length]);
 
   return (
-    <section className="relative py-20 md:py-28 px-6 max-w-7xl mx-auto overflow-hidden">
-      {/* Animated background elements */}
+    <section className="relative py-10 md:py-12 px-6 max-w-7xl mx-auto overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
         <div className="absolute top-20 right-20 w-64 h-64 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
         <div className="absolute bottom-20 left-20 w-64 h-64 bg-indigo-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
@@ -46,7 +46,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight bg-gradient-to-r from-blue-900 to-blue-700 bg-clip-text text-transparent"
+            className="text-3xl md:text-3xl lg:text-5xl font-bold mb-6 leading-tight bg-gradient-to-r from-blue-900 to-blue-700 bg-clip-text text-transparent"
           >
             Digital Innovation Meets Strategic Investment
           </motion.h1>
@@ -66,17 +66,21 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <button className="px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold hover:from-blue-700 hover:to-blue-900 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center">
-              Let's get started <FaArrowRight className="ml-2" />
-            </button>
-            <button className="px-8 py-4 rounded-xl border-2 border-blue-600 text-blue-600 font-semibold hover:bg-blue-50 transition-all flex items-center group">
-              <span className="mr-3 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full group-hover:bg-blue-200 transition">
-                <FaPlay className="text-blue-600 text-xs" />
-              </span>
-              Watch Showreel
-            </button>
+            <Link href="/services">
+              <a className="px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold hover:from-blue-700 hover:to-blue-900 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center">
+                Let's Get Started <FaArrowRight className="ml-2" />
+              </a>
+            </Link>
+            
+            <Link href="/contact">
+              <a className="px-8 py-4 rounded-xl border-2 border-blue-600 text-blue-600 font-semibold hover:bg-blue-50 transition-all flex items-center group">
+                <span className="mr-3 flex items-center justify-center w-5 h-5 bg-blue-100 rounded-full group-hover:bg-blue-200 transition">
+                  <FaPlay className="text-blue-600 text-xs" />
+                </span>
+                Contact Us
+              </a>
+            </Link>
           </motion.div>
-
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -95,7 +99,7 @@ const Hero = () => {
                 ))}
               </div>
               <div className="ml-4">
-                <p className="text-sm font-medium text-gray-700">Trusted by 500+ clients</p>
+                <p className="text-sm font-medium text-gray-700">Trusted by 1000+ clients</p>
                 <div className="flex">
                   {[1, 2, 3, 4, 5].map((star) => (
                     <svg key={star} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
@@ -121,7 +125,6 @@ const Hero = () => {
             className="rounded-2xl w-full h-auto shadow-2xl object-cover transform hover:scale-[1.02] transition-transform duration-500"
           />
           
-          {/* Floating card elements */}
           <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg border border-gray-100 z-10">
             <div className="flex items-center">
               <div className="bg-blue-100 p-2 rounded-lg mr-3">
@@ -152,7 +155,6 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      {/* Animated gradient border */}
       <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 animate-gradient-x"></div>
 
       <style jsx>{`

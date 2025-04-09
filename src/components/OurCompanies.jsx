@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import { FaExternalLinkAlt, FaChevronRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-// Import company logos
 import DevnexLogo from '../assets/devnex.jpg';
-import SkaffArchLogo from '../assets/skaffconstruction.jpg';
+import SkaffArchLogo from '../assets/skaffconstruction1.jpg';
 import InzoomLogo from '../assets/inzoomcapture.jpg';
 import SkaffIndustryLogo from '../assets/skaffindustry.jpg';
 import BlueprintLogo from '../assets/blueprintgraphics.jpg';
@@ -14,7 +13,7 @@ import RosMusicLogo from '../assets/rosmusic.jpg';
 import SIELogo from '../assets/SIE.jpg';
 import SavanaLogo from '../assets/savanafilms.jpg';
 import SkaffTvLogo from '../assets/skafftv.jpg';
-import SkaffSportLogo from '../assets/skaffsport.jpg';
+import SkaffSportLogo from '../assets/sport.jpg';
 
 const companies = [
   { 

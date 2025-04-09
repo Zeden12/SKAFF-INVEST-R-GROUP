@@ -4,7 +4,7 @@ import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 
 // Import company logos
 import DevnexLogo from '../assets/devnex.jpg';
-import SkaffArchLogo from '../assets/skaffconstruction.jpg';
+import SkaffArchLogo from '../assets/skaffconstruction1.jpg';
 import InzoomLogo from '../assets/inzoomcapture.jpg';
 import SkaffIndustryLogo from '../assets/skaffindustry.jpg';
 import BlueprintLogo from '../assets/blueprintgraphics.jpg';
@@ -14,7 +14,7 @@ import RosMusicLogo from '../assets/rosmusic.jpg';
 import SIELogo from '../assets/SIE.jpg';
 import SavanaLogo from '../assets/savanafilms.jpg';
 import SkaffTvLogo from '../assets/skafftv.jpg';
-import SkaffSportLogo from '../assets/skaffsport.jpg';
+import SkaffSportLogo from '../assets/sport.jpg';
 
 const companies = [
   { 
@@ -214,7 +214,6 @@ const CompaniesPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-      {/* Hero Section */}
       <div className="bg-blue-800 text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">The SKAFF INVEST R GROUP Ecosystem</h1>
@@ -238,7 +237,6 @@ const CompaniesPage = () => {
         </div>
       </div>
 
-      {/* Stats Overview */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div className="bg-white p-6 rounded-xl shadow-sm">

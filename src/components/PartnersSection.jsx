@@ -3,9 +3,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-// Import your company logos (adjust paths as needed)
 import DevnexLogo from '../assets/devnex.jpg';
-import SkaffArchLogo from '../assets/skaffconstruction.jpg';
+import SkaffArchLogo from '../assets/skaffconstruction1.jpg';
 import InzoomLogo from '../assets/inzoomcapture.jpg';
 import SkaffIndustryLogo from '../assets/skaffindustry.jpg';
 import BlueprintLogo from '../assets/blueprintgraphics.jpg';
@@ -15,7 +14,7 @@ import RosMusicLogo from '../assets/rosmusic.jpg';
 import SIELogo from '../assets/SIE.jpg';
 import SavanaLogo from '../assets/savanafilms.jpg';
 import SkaffTvLogo from '../assets/skafftv.jpg';
-import SkaffSportLogo from '../assets/skaffsport.jpg';
+import SkaffSportLogo from '../assets/sport.jpg';
 
 const OurCompanies = () => {
   const companies = [

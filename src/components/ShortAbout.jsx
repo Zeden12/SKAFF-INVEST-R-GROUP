@@ -16,7 +16,7 @@ const ShortAbout = () => {
                                         <span className="block text-blue-200">Who We Are</span>
                                     </h1>
                                     <p className="mt-4 text-base text-blue-100 sm:mt-6 sm:text-lg sm:max-w-2xl sm:mx-auto md:mt-6 md:text-xl lg:mx-0">
-                                    SKAFF INVEST R GROUP is a diversified holding company with a portfolio of specialized subsidiaries across multiple industries. Founded in 2010, we've grown from a single business unit to a conglomerate with presence in technology, construction, media, and more. Our companies work synergistically to deliver comprehensive solutions to our clients worldwide.
+                                    SKAFF INVEST R GROUP is a diversified holding company with a portfolio of specialized subsidiaries across multiple industries. Founded in 2019, we've grown from a single business unit to a conglomerate with presence in technology, construction, media, and more. Our companies work synergistically to deliver comprehensive solutions to our clients worldwide.
                                     </p>
                                 </div>
                             </div>
