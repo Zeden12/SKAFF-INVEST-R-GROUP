@@ -15,7 +15,6 @@ const ServicesPage = () => {
             <h2 className="text-2xl font-bold text-gray-800 mb-2">Construction Services</h2>
             <p className="text-gray-600">Quality architectural and construction solutions</p>
           </div>
-          {/* Add more services */}
         </div>
       </div>
     </div>

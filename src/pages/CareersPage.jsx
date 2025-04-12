@@ -11,7 +11,6 @@ const CareersPage = () => {
           <p className="text-lg text-gray-700 mb-6">
             We're always looking for talented individuals to join our growing family of companies.
           </p>
-          {/* Job listings would go here */}
         </div>
       </div>
     </div>

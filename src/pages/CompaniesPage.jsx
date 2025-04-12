@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { FaExternalLinkAlt, FaChartLine, FaUsers, FaGlobeAmericas, FaHandshake } from 'react-icons/fa';
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
-
-// Import company logos
 import DevnexLogo from '../assets/devnex.jpg';
 import SkaffArchLogo from '../assets/skaffconstruction1.jpg';
 import InzoomLogo from '../assets/inzoomcapture.jpg';
@@ -347,7 +345,6 @@ const CompaniesPage = () => {
         </div>
       </div>
 
-      {/* CTA Section */}
       <div className="bg-blue-700 text-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Partner With Our Ecosystem?</h2>
