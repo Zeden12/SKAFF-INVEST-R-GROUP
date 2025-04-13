@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaExternalLinkAlt, FaChartLine, FaUsers, FaGlobeAmericas, FaHandshake } from 'react-icons/fa';
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
+import { motion } from 'framer-motion';
 import DevnexLogo from '../assets/devnex.jpg';
 import SkaffArchLogo from '../assets/skaffconstruction1.jpg';
 import InzoomLogo from '../assets/inzoomcapture.jpg';
@@ -27,7 +28,7 @@ const companies = [
       projects: '20+',
       years: '3'
     },
-    services: ['Custom Software', 'Cloud Solutions', 'SaaS Solutions', 'Cybersecurity', 'AI Integration', 'IT Consulting', 'Support Services', ]
+    services: ['Custom Software', 'Cloud Solutions', 'SaaS Solutions', 'Cybersecurity', 'AI Integration', 'IT Consulting', 'Support Services']
   },
   { 
     name: 'Skaff Market Place', 
@@ -55,7 +56,7 @@ const companies = [
       campaigns: '100+',
       awards: '5'
     },
-    services: ['Logo Design','banner design', 'Brand Strategy', 'Print Media', 'Digital Advertising boards', 'Social Media Graphics']
+    services: ['Logo Design','Banner Design', 'Brand Strategy', 'Print Media', 'Digital Advertising Boards', 'Social Media Graphics']
   },
   { 
     name: 'INZOOM Capture', 
@@ -115,7 +116,7 @@ const companies = [
   },
   { 
     name: 'Skaff Arch Construct', 
-    tagline: 'Architectural Design and construction',
+    tagline: 'Architectural Design and Construction',
     logo: SkaffArchLogo,
     website: 'https://skaffarch.com',
     bgColor: 'bg-green-50',
@@ -187,186 +188,238 @@ const companies = [
 
 const CompaniesPage = () => {
   const [expandedCompany, setExpandedCompany] = useState(null);
-  const [activeFilter, setActiveFilter] = useState('all');
 
   const toggleExpand = (index) => {
     setExpandedCompany(expandedCompany === index ? null : index);
   };
 
-  const filteredCompanies = activeFilter === 'all' 
-    ? companies 
-    : companies.filter(company => company.tagline.toLowerCase().includes(activeFilter));
-
-  const industryFilters = [
-    { id: 'all', label: 'All Industries' },
-    { id: 'technology', label: 'Technology' },
-    { id: 'platform', label: 'E-commerce' },
-    { id: 'design', label: 'Design' },
-    { id: 'education', label: 'Education' },
-    { id: 'construction', label: 'Construction' },
-    { id: 'industrial', label: 'Industrial' },
-    { id: 'fashion', label: 'Fashion' },
-    { id: 'media', label: 'Entertainment' },
-    { id: 'sports', label: 'Sports' }
-  ];
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-      <div className="bg-blue-800 text-white py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">The SKAFF INVEST R GROUP Ecosystem</h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-8">
+      <section className="relative py-28 bg-gradient-to-br from-blue-800 to-indigo-900 text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-20 right-20 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+          <div className="absolute bottom-20 left-20 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+        </div>
+        
+        <div className="relative max-w-7xl mx-auto px-6 text-center">
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-4xl md:text-5xl font-bold mb-6"
+          >
+            The <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">SKAFF INVEST R GROUP</span> Ecosystem
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8"
+          >
             A synergistic network of specialized companies delivering comprehensive solutions across industries
-          </p>
-          <div className="flex justify-center space-x-4">
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="flex justify-center space-x-4"
+          >
             <a 
               href="#companies" 
-              className="px-6 py-3 bg-white text-blue-800 font-medium rounded-lg hover:bg-blue-100 transition"
+              className="px-6 py-3 bg-white text-blue-800 font-medium rounded-lg hover:bg-blue-100 transition shadow-lg"
             >
               Explore Companies
             </a>
             <a 
               href="/contact" 
-              className="px-6 py-3 border border-white text-white font-medium rounded-lg hover:bg-white hover:text-blue-800 transition"
+              className="px-6 py-3 border border-white text-white font-medium rounded-lg hover:bg-white hover:text-blue-800 transition shadow-lg"
             >
               Partner With Us
             </a>
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </section>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <motion.div 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
+      >
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <div className="bg-white p-6 rounded-xl shadow-sm">
-            <FaChartLine className="h-10 w-10 text-blue-600 mx-auto mb-3" />
-            <p className="text-3xl font-bold text-gray-900">12+</p>
-            <p className="text-gray-600">Specialized Companies</p>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-sm">
-            <FaUsers className="h-10 w-10 text-blue-600 mx-auto mb-3" />
-            <p className="text-3xl font-bold text-gray-900">50+</p>
-            <p className="text-gray-600">Dedicated Employees</p>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-sm">
-            <FaGlobeAmericas className="h-10 w-10 text-blue-600 mx-auto mb-3" />
-            <p className="text-3xl font-bold text-gray-900">3+</p>
-            <p className="text-gray-600">Countries Served</p>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-sm">
-            <FaHandshake className="h-10 w-10 text-blue-600 mx-auto mb-3" />
-            <p className="text-3xl font-bold text-gray-900">100+</p>
-            <p className="text-gray-600">Satisfied Clients</p>
-          </div>
+          {[
+            { icon: <FaChartLine className="h-10 w-10 text-blue-600 mx-auto mb-3" />, value: '12+', label: 'Specialized Companies' },
+            { icon: <FaUsers className="h-10 w-10 text-blue-600 mx-auto mb-3" />, value: '50+', label: 'Dedicated Employees' },
+            { icon: <FaGlobeAmericas className="h-10 w-10 text-blue-600 mx-auto mb-3" />, value: '3+', label: 'Countries Served' },
+            { icon: <FaHandshake className="h-10 w-10 text-blue-600 mx-auto mb-3" />, value: '100+', label: 'Satisfied Clients' }
+          ].map((stat, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ y: -5 }}
+              className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+            >
+              {stat.icon}
+              <p className="text-3xl font-bold text-gray-900">{stat.value}</p>
+              <p className="text-gray-600">{stat.label}</p>
+            </motion.div>
+          ))}
         </div>
-      </div>
+      </motion.div>
 
-      {/* Filter Bar */}
-      <div className="bg-white sticky top-0 z-10 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex overflow-x-auto space-x-4 pb-2">
-            {industryFilters.map(filter => (
-              <button
-                key={filter.id}
-                onClick={() => setActiveFilter(filter.id)}
-                className={`whitespace-nowrap px-4 py-2 rounded-full text-sm font-medium transition ${activeFilter === filter.id ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-800 hover:bg-gray-200'}`}
-              >
-                {filter.label}
-              </button>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Companies Grid */}
       <div id="companies" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredCompanies.map((company, index) => (
-            <div 
-              key={index} 
-              className={`${company.bgColor} rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg`}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          {companies.map((company, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ y: -5 }}
+              className={`${company.bgColor} rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl`}
             >
               <div className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="w-16 h-16 rounded-full bg-white p-1 shadow-sm mr-4">
+                  <motion.div 
+                    whileHover={{ rotate: 5, scale: 1.05 }}
+                    className="w-16 h-16 rounded-full bg-white p-1 shadow-md mr-4"
+                  >
                     <img 
                       src={company.logo} 
                       alt={company.name} 
                       className="w-full h-full object-contain rounded-full"
                     />
-                  </div>
+                  </motion.div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-900">{company.name}</h3>
-                    <p className="text-blue-600 font-medium">{company.tagline}</p>
+                    <p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 font-medium">
+                      {company.tagline}
+                    </p>
                   </div>
                 </div>
                 <p className="text-gray-700 mb-4">{company.description}</p>
                 
                 <div className="grid grid-cols-3 gap-2 mb-4">
                   {Object.entries(company.stats).map(([key, value]) => (
-                    <div key={key} className="bg-white bg-opacity-50 p-2 rounded text-center">
+                    <motion.div 
+                      key={key}
+                      whileHover={{ y: -3 }}
+                      className="bg-white bg-opacity-70 p-2 rounded-lg text-center shadow-sm"
+                    >
                       <p className="font-bold text-gray-900">{value}</p>
                       <p className="text-xs text-gray-600 capitalize">{key}</p>
-                    </div>
+                    </motion.div>
                   ))}
                 </div>
 
-                <button
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
                   onClick={() => toggleExpand(index)}
                   className="flex items-center text-blue-600 font-medium w-full justify-between py-2"
                 >
                   <span>{expandedCompany === index ? 'Hide Services' : 'View Services'}</span>
                   {expandedCompany === index ? <FiChevronUp /> : <FiChevronDown />}
-                </button>
+                </motion.button>
 
                 {expandedCompany === index && (
-                  <div className="mt-4 pt-4 border-t border-gray-200">
+                  <motion.div 
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: 'auto' }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="mt-4 pt-4 border-t border-gray-200"
+                  >
                     <h4 className="font-bold text-gray-900 mb-2">Key Services:</h4>
                     <ul className="space-y-2">
                       {company.services.map((service, i) => (
-                        <li key={i} className="flex items-start">
+                        <motion.li 
+                          key={i}
+                          initial={{ x: -10, opacity: 0 }}
+                          animate={{ x: 0, opacity: 1 }}
+                          transition={{ delay: i * 0.05 }}
+                          className="flex items-start"
+                        >
                           <span className="text-blue-500 mr-2">•</span>
                           <span className="text-gray-700">{service}</span>
-                        </li>
+                        </motion.li>
                       ))}
                     </ul>
-                    <a
+                    <motion.a
+                      whileHover={{ scale: 1.02 }}
                       href={company.website}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="mt-4 inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
                     >
                       Visit Website <FaExternalLinkAlt className="ml-2" size={12} />
-                    </a>
-                  </div>
+                    </motion.a>
+                  </motion.div>
                 )}
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
 
-      <div className="bg-blue-700 text-white py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Partner With Our Ecosystem?</h2>
-          <p className="text-xl mb-8">
+      <section className="py-20 bg-gradient-to-r from-blue-800 to-purple-900 text-white">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl md:text-4xl font-bold mb-6"
+          >
+            Ready to Partner With Our Ecosystem?
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-xl mb-8"
+          >
             Whether you need one service or multiple solutions across our companies, we provide seamless integration and exceptional results.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4"
+          >
             <a 
               href="/contact" 
-              className="px-8 py-3 bg-white text-blue-800 font-medium rounded-lg hover:bg-blue-100 transition"
+              className="px-8 py-3 bg-white text-blue-800 font-medium rounded-lg hover:bg-blue-100 transition shadow-lg"
             >
               Get In Touch
             </a>
             <a 
               href="/services" 
-              className="px-8 py-3 border border-white text-white font-medium rounded-lg hover:bg-white hover:text-blue-800 transition"
+              className="px-8 py-3 border-2 border-white text-white font-medium rounded-lg hover:bg-white hover:text-blue-800 transition shadow-lg"
             >
               Explore All Services
             </a>
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </section>
+
+      <style jsx>{`
+        @keyframes blob {
+          0%, 100% { transform: translate(0px, 0px) scale(1); }
+          33% { transform: translate(30px, -50px) scale(1.1); }
+          66% { transform: translate(-20px, 20px) scale(0.9); }
+        }
+        .animate-blob {
+          animation: blob 7s infinite;
+        }
+        .animation-delay-2000 {
+          animation-delay: 2s;
+        }
+      `}</style>
     </div>
   );
 };
