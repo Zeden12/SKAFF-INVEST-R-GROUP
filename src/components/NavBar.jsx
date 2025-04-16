@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Link, NavLink } from 'react-router-dom';
-import Logo from '../assets/skaff2.jpg';
+import Logo from '../assets/skaff.jpg';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

@@ -169,8 +169,8 @@ const ContactPage = () => {
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-gray-900">Phone Numbers</h3>
                     <p className="text-gray-600 mt-1">
-                      Main: +250 788 123 456<br />
-                      Support: +250 788 987 654
+                      Main: +250 788 33 88 77<br />
+                      Support: +250 726 12 97 79
                     </p>
                   </div>
                 </div>
@@ -182,8 +182,8 @@ const ContactPage = () => {
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-gray-900">Email Addresses</h3>
                     <p className="text-gray-600 mt-1">
-                      General: info@skaffgroup.com<br />
-                      Support: support@skaffgroup.com
+                      General: info@skaffinvestrgroup.com<br />
+                      Support: support@skaffinvestrgroup.com
                     </p>
                   </div>
                 </div>
@@ -241,13 +241,13 @@ const ContactPage = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
-              href="tel:+250788123456"
+              href="tel:+250788338877"
               className="px-8 py-4 bg-white text-blue-800 font-bold rounded-lg hover:bg-gray-100 transition shadow-lg hover:shadow-xl flex items-center justify-center"
             >
               <FaPhone className="mr-2" /> Call Us Now
             </a>
             <a
-              href="mailto:info@skaffgroup.com"
+              href="mailto:info@skaffinvestrgroup.com"
               className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition flex items-center justify-center"
             >
               <FaEnvelope className="mr-2" /> Email Our Team

@@ -65,7 +65,7 @@ const services = [
   { 
     icon: <FaCode className="text-blue-500" size={24} />, 
     title: 'Broadcasting Solutions',
-    desc: 'Comprehensive media broadcasting and streaming services through Skaff Media.', 
+    desc: 'Comprehensive media broadcasting and streaming services through Skaff TV.', 
     benefits: ['Advertsiment','Live streaming', 'Content syndication', 'Multi-platform reach']
   },
   { 

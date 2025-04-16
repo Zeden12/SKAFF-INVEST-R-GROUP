@@ -284,6 +284,7 @@ const AboutPage = () => {
               <ul className="space-y-3 text-gray-600 mb-8">
                 {[
                   'Education and youth empowerment programs',
+                  'Job Opportunities and skills training',
                   'Sustainable environmental initiatives',
                   'Support for local entrepreneurs and SMEs',
                   'Healthcare access improvement projects'

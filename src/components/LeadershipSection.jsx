@@ -8,24 +8,24 @@ import ITImage from '../assets/it.jpg';
 const LeadershipSection = () => {
   const leaders = [
     {
-      name: 'Mr Reuben Skaff',
-      position: 'Founder & CEO',
+      name: 'Mr Reuben IRIHOSE',
+      position: 'Founder & Chairman',
       bio: 'Visionary leader with 15+ years experience in global investments and business strategy. Driving innovation across all SKAFF INVEST R GROUP subsidiaries.',
       image: CEOImage,
       linkedin: '#',
       instagram: '#'
     },
     {
-      name: 'Mr GATANAZI Amin',
-      position: 'Operations Director',
+      name: 'Mr James NKURUNZIZA',
+      position: 'Chief Operations Officer',
       bio: 'Operational excellence expert with a track record of scaling businesses internationally. Oversees all operational functions across the group.',
       image: OpsImage,
       linkedin: '#',
       instagram: '#'
     },
     {
-      name: 'IRADUKUNDA Ella Herve',
-      position: 'Marketing Director',
+      name: 'Mubaraka NIZEYIMANA',
+      position: 'Chief Marketing Officer',
       bio: 'Brand strategist leading all marketing initiatives. Specializes in digital transformation and customer experience innovation.',
       image: MarketingImage,
       linkedin: '#',
@@ -34,6 +34,46 @@ const LeadershipSection = () => {
     {
       name: 'Ernest HAGUMA KWIZERA',
       position: 'IT Director',
+      bio: 'Technology architect overseeing digital infrastructure and cybersecurity across all company divisions.',
+      image: ITImage,
+      linkedin: '#',
+      instagram: '#'
+    },
+    {
+      name: 'Phionah UWASE',
+      position: 'Chief of staff',
+      bio: 'Technology architect overseeing digital infrastructure and cybersecurity across all company divisions.',
+      image: ITImage,
+      linkedin: '#',
+      instagram: '#'
+    },
+    {
+      name: 'CEO',
+      position: 'CEO',
+      bio: 'Technology architect overseeing digital infrastructure and cybersecurity across all company divisions.',
+      image: ITImage,
+      linkedin: '#',
+      instagram: '#'
+    },
+    {
+      name: 'Phionah UWASE',
+      position: 'Chief of finance',
+      bio: 'Technology architect overseeing digital infrastructure and cybersecurity across all company divisions.',
+      image: ITImage,
+      linkedin: '#',
+      instagram: '#'
+    },
+    {
+      name: 'CEO,......',
+      position: 'Human Resources Officer',
+      bio: 'Technology architect overseeing digital infrastructure and cybersecurity across all company divisions.',
+      image: ITImage,
+      linkedin: '#',
+      instagram: '#'
+    },
+    {
+      name: 'CEO,......',
+      position: 'legal officer',
       bio: 'Technology architect overseeing digital infrastructure and cybersecurity across all company divisions.',
       image: ITImage,
       linkedin: '#',
