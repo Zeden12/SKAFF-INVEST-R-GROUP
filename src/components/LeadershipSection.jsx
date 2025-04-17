@@ -39,46 +39,6 @@ const LeadershipSection = () => {
       linkedin: '#',
       instagram: '#'
     },
-    {
-      name: 'Phionah UWASE',
-      position: 'Chief of staff',
-      bio: 'Technology architect overseeing digital infrastructure and cybersecurity across all company divisions.',
-      image: ITImage,
-      linkedin: '#',
-      instagram: '#'
-    },
-    {
-      name: 'CEO',
-      position: 'CEO',
-      bio: 'Technology architect overseeing digital infrastructure and cybersecurity across all company divisions.',
-      image: ITImage,
-      linkedin: '#',
-      instagram: '#'
-    },
-    {
-      name: 'Phionah UWASE',
-      position: 'Chief of finance',
-      bio: 'Technology architect overseeing digital infrastructure and cybersecurity across all company divisions.',
-      image: ITImage,
-      linkedin: '#',
-      instagram: '#'
-    },
-    {
-      name: 'CEO,......',
-      position: 'Human Resources Officer',
-      bio: 'Technology architect overseeing digital infrastructure and cybersecurity across all company divisions.',
-      image: ITImage,
-      linkedin: '#',
-      instagram: '#'
-    },
-    {
-      name: 'CEO,......',
-      position: 'legal officer',
-      bio: 'Technology architect overseeing digital infrastructure and cybersecurity across all company divisions.',
-      image: ITImage,
-      linkedin: '#',
-      instagram: '#'
-    }
   ];
 
   return (
