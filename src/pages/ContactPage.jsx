@@ -1,8 +1,98 @@
-import React from 'react';
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaPaperPlane, FaUser, FaBuilding } from 'react-icons/fa';
+import React, { useState, useEffect } from 'react';
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaPaperPlane, FaUser } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import axios from 'axios';
 
 const ContactPage = () => {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  });
+
+  const [formStatus, setFormStatus] = useState({
+    message: '',
+    isSuccess: false,
+    isError: false
+  });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  useEffect(() => {
+    if (formStatus.message) {
+      const timer = setTimeout(() => {
+        setFormStatus({ message: '', isSuccess: false, isError: false });
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [formStatus]);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setFormStatus({ message: '', isSuccess: false, isError: false });
+
+    try {
+      const response = await axios.post(
+        'https://skaff-invest-r-group-b.onrender.com/api/contact/submit',
+        formData,
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          }
+        }
+      );
+
+      if (response.status === 201) {
+        setFormStatus({
+          message: 'Thank you! Your message has been sent successfully.',
+          isSuccess: true,
+          isError: false
+        });
+        // Reset form
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: ''
+        });
+      }
+    } catch (error) {
+      let errorMessage = 'Failed to send message. Please try again later.';
+      
+      if (error.response) {
+        if (error.response.data.errors) {
+          errorMessage = error.response.data.errors.map(err => err.msg).join(', ');
+        } else if (error.response.data.error) {
+          errorMessage = error.response.data.error;
+        } else if (error.response.data.message) {
+          errorMessage = error.response.data.message;
+        }
+      }
+
+      setFormStatus({
+        message: errorMessage,
+        isSuccess: false,
+        isError: true
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       <section className="relative py-20 md:py-28 bg-gradient-to-r from-blue-800 to-indigo-900 text-white overflow-hidden">
@@ -33,7 +123,6 @@ const ContactPage = () => {
 
       <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
-          {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -46,29 +135,37 @@ const ContactPage = () => {
               <p className="text-gray-600 mb-8">
                 Fill out the form below and our team will get back to you within 24 hours. For urgent matters, please call us directly.
               </p>
-              <form className="space-y-6">
+              
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2 flex items-center">
+                    <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2 flex items-center">
                       <FaUser className="mr-2 text-blue-600" /> First Name
                     </label>
                     <input
                       type="text"
-                      id="name"
+                      id="firstName"
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
                       placeholder="Enter Your first name"
                       required
                     />
                   </div>
                   <div>
-                    <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2 flex items-center">
+                    <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2 flex items-center">
                       <FaUser className="mr-2 text-blue-600" /> Last Name
                     </label>
                     <input
                       type="text"
-                      id="company"
+                      id="lastName"
+                      name="lastName"
+                      value={formData.lastName}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
                       placeholder="Enter Your last name"
+                      required
                     />
                   </div>
                 </div>
@@ -81,6 +178,9 @@ const ContactPage = () => {
                     <input
                       type="email"
                       id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
                       placeholder="your.email@example.com"
                       required
@@ -93,6 +193,9 @@ const ContactPage = () => {
                     <input
                       type="tel"
                       id="phone"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
                       placeholder="Enter Your Phone Number"
                     />
@@ -100,10 +203,15 @@ const ContactPage = () => {
                 </div>
                 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                    Subject
+                  </label>
                   <input
                     type="text"
                     id="subject"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
                     placeholder="What would you like to discuss?"
                     required
@@ -111,23 +219,48 @@ const ContactPage = () => {
                 </div>
                 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Your Message</label>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                    Your Message
+                  </label>
                   <textarea
                     id="message"
+                    name="message"
                     rows={5}
+                    value={formData.message}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
                     placeholder="Tell us how we can help you..."
                     required
                   ></textarea>
                 </div>
+
+                {/* Message display positioned above submit button */}
+                <div className="mb-4">
+                  {formStatus.message && (
+                    <div className={`p-4 rounded-lg ${
+                      formStatus.isSuccess 
+                        ? 'bg-green-100 text-green-800 border border-green-200' 
+                        : 'bg-red-100 text-red-800 border border-red-200'
+                    }`}
+                    >
+                      <p className="font-medium">
+                        {formStatus.isSuccess ? 'Successful!' : 'Error!'}
+                      </p>
+                      <p>{formStatus.message}</p>
+                    </div>
+                  )}
+                </div>
                 
                 <div>
                   <button
                     type="submit"
-                    className="w-full flex items-center justify-center px-6 py-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-900 transition-all shadow-lg hover:shadow-xl"
+                    disabled={isSubmitting}
+                    className={`w-full flex items-center justify-center px-6 py-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-900 transition-all shadow-lg hover:shadow-xl cursor-pointer ${
+                      isSubmitting ? 'opacity-75 cursor-not-allowed' : ''
+                    }`}
                   >
                     <FaPaperPlane className="mr-3" />
-                    Send Message
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
                   </button>
                 </div>
               </form>
