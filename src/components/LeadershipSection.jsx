@@ -2,42 +2,42 @@ import React from 'react';
 import { FaLinkedin, FaInstagram } from 'react-icons/fa';
 import CEOImage from '../assets/ceo.jpg';
 import OpsImage from '../assets/operations.jpg';
-import MarketingImage from '../assets/marketing.jpg';
 import ITImage from '../assets/it.jpg';
+import COS from '../assets/cos.jpg';
 
 const LeadershipSection = () => {
   const leaders = [
     {
       name: 'Mr Reuben IRIHOSE',
       position: 'Founder & Chairman',
-      bio: 'Visionary leader with 15+ years experience in global investments and business strategy. Driving innovation across all SKAFF INVEST R GROUP subsidiaries.',
-      image: CEOImage,
+      bio: 'Visionary leader with 15+ years of experience in global investments and business strategy. Drives innovation and strategic direction across all SKAFF INVEST R GROUP subsidiaries.',
+      image: ITImage,
       linkedin: '#',
       instagram: '#'
     },
     {
       name: 'Mr James NKURUNZIZA',
       position: 'Chief Operations Officer',
-      bio: 'Operational excellence expert with a track record of scaling businesses internationally. Oversees all operational functions across the group.',
+      bio: 'Expert in operational excellence with a proven record of scaling businesses internationally. Leads operations to ensure efficiency and performance across all units.',
       image: OpsImage,
       linkedin: '#',
       instagram: '#'
     },
     {
-      name: 'Mubaraka NIZEYIMANA',
-      position: 'Chief Marketing Officer',
-      bio: 'Brand strategist leading all marketing initiatives. Specializes in digital transformation and customer experience innovation.',
-      image: MarketingImage,
-      linkedin: '#',
-      instagram: '#'
-    },
+          name: 'Phionah UWASE',
+          position: 'Chief of Staff',
+          bio: 'Coordinates executive functions and strategic initiatives while supporting smooth cross-departmental collaboration.',
+          image: COS,
+          linkedin: '#',
+          instagram: '#'
+        },
     {
       name: 'Ernest HAGUMA KWIZERA',
       position: 'IT Director',
-      bio: 'Technology architect overseeing digital infrastructure and cybersecurity across all company divisions.',
-      image: ITImage,
-      linkedin: '#',
-      instagram: '#'
+      bio: 'Full-stack tech expert responsible for designing, implementing, and securing digital systems powering all SKAFF INVEST R GROUP companies.',
+      image: CEOImage,
+      linkedin: 'https://www.linkedin.com/in/ernest-haguma-kwizera-709195241/',
+      instagram: 'https://www.instagram.com/squach_cj_zeden/'
     },
   ];
 
@@ -49,7 +49,7 @@ const LeadershipSection = () => {
             Executive <span className="text-blue-600">Leadership</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Our leadership team brings together decades of combined experience in investments, 
+            Our leadership team brings together decades of combined experience in investments,
             technology, and global business strategy.
           </p>
         </div>
@@ -59,8 +59,8 @@ const LeadershipSection = () => {
             <div key={index} className="flex flex-col md:flex-row gap-8 items-center">
               <div className="w-full md:w-5/12 lg:w-4/12">
                 <div className="relative pb-[125%] overflow-hidden rounded-xl shadow-xl">
-                  <img 
-                    src={leader.image} 
+                  <img
+                    src={leader.image}
                     alt={leader.name}
                     className="absolute inset-0 w-full h-full object-cover"
                   />
@@ -83,7 +83,7 @@ const LeadershipSection = () => {
                 </div>
                 <p className="text-gray-600 mb-6">{leader.bio}</p>
                 <div className="border-t border-gray-200 pt-6">
-                  <a 
+                  <a
                     href={`/about#${leader.name.toLowerCase().replace(' ', '-')}`}
                     className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
                   >
@@ -96,7 +96,7 @@ const LeadershipSection = () => {
         </div>
 
         <div className="text-center mt-16">
-          <a 
+          <a
             href="/about"
             className="inline-flex items-center px-8 py-4 border border-gray-300 text-lg font-medium rounded-lg shadow-sm text-gray-700 bg-white hover:bg-gray-50"
           >

@@ -12,81 +12,77 @@ import CEOImage from '../assets/ceo.jpg';
 import OpsImage from '../assets/operations.jpg';
 import MarketingImage from '../assets/marketing.jpg';
 import ITImage from '../assets/it.jpg';
+import COS from '../assets/cos.jpg';
+import legal from '../assets/legal.jpg';
+import HR from '../assets/hr.jpg';
+import finance from '../assets/finance.jpg';
 
 const AboutPage = () => {
   const leaders = [
     {
-      name: 'Mr Reuben Skaff',
-      position: 'Founder & CEO',
-      bio: 'Visionary leader with 15+ years experience in global investments and business strategy. Driving innovation across all SKAFF INVEST R GROUP subsidiaries.',
+      name: 'Mr Reuben IRIHOSE',
+      position: 'Founder & Chairman',
+      bio: 'Visionary leader with 15+ years of experience in global investments and business strategy. Drives innovation and strategic direction across all SKAFF INVEST R GROUP subsidiaries.',
       image: CEOImage,
       linkedin: '#',
       instagram: '#'
     },
     {
-      name: 'Mr GATANAZI Amin',
-      position: 'Operations Director',
-      bio: 'Operational excellence expert with a track record of scaling businesses internationally. Oversees all operational functions across the group.',
+      name: 'Mr James NKURUNZIZA',
+      position: 'Chief Operations Officer',
+      bio: 'Expert in operational excellence with a proven record of scaling businesses internationally. Leads operations to ensure efficiency and performance across all units.',
       image: OpsImage,
       linkedin: '#',
       instagram: '#'
     },
     {
-      name: 'IRADUKUNDA Ella Herve',
-      position: 'Marketing Director',
-      bio: 'Brand strategist leading all marketing initiatives. Specializes in digital transformation and customer experience innovation.',
+      name: 'Phionah UWASE',
+      position: 'Chief of Staff',
+      bio: 'Coordinates executive functions and strategic initiatives while supporting smooth cross-departmental collaboration.',
+      image: COS,
+      linkedin: '#',
+      instagram: '#'
+    },
+    {
+      name: 'Mubaraka NIZEYIMANA',
+      position: 'Chief Marketing Officer',
+      bio: 'Creative brand strategist leading innovative marketing campaigns, digital growth, and customer engagement strategies.',
       image: MarketingImage,
+      linkedin: '#',
+      instagram: '#'
+    },
+    {
+      name: 'ICYEZA MIZERO Fortune',
+      position: 'Human Resources Officer',
+      bio: 'Passionate HR professional managing recruitment, employee well-being, and talent development across the group.',
+      image: HR,
       linkedin: '#',
       instagram: '#'
     },
     {
       name: 'Ernest HAGUMA KWIZERA',
       position: 'IT Director',
-      bio: 'Technology architect overseeing digital infrastructure and cybersecurity across all company divisions.',
-      image: ITImage,
+      bio: 'Full-stack tech expert responsible for designing, implementing, and securing digital systems powering all SKAFF INVEST R GROUP companies.',
+      image: CEOImage,
+      linkedin: 'https://www.linkedin.com/in/ernest-haguma-kwizera-709195241/',
+      instagram: 'https://www.instagram.com/squach_cj_zeden/'
+    },
+    {
+      name: 'Honorine UWASE',
+      position: 'Chief Financial Officer',
+      bio: 'Finance leader overseeing budgeting, financial reporting, and investment strategies to ensure the group’s financial sustainability.',
+      image: finance,
       linkedin: '#',
       instagram: '#'
     },
     {
-          name: 'Phionah UWASE',
-          position: 'Chief of staff',
-          bio: 'Technology architect overseeing digital infrastructure and cybersecurity across all company divisions.',
-          image: ITImage,
-          linkedin: '#',
-          instagram: '#'
-        },
-        {
-          name: 'CEO',
-          position: 'CEO',
-          bio: 'Technology architect overseeing digital infrastructure and cybersecurity across all company divisions.',
-          image: ITImage,
-          linkedin: '#',
-          instagram: '#'
-        },
-        {
-          name: 'Phionah UWASE',
-          position: 'Chief of finance',
-          bio: 'Technology architect overseeing digital infrastructure and cybersecurity across all company divisions.',
-          image: ITImage,
-          linkedin: '#',
-          instagram: '#'
-        },
-        {
-          name: 'CEO,......',
-          position: 'Human Resources Officer',
-          bio: 'Technology architect overseeing digital infrastructure and cybersecurity across all company divisions.',
-          image: ITImage,
-          linkedin: '#',
-          instagram: '#'
-        },
-        {
-          name: 'CEO,......',
-          position: 'legal officer',
-          bio: 'Technology architect overseeing digital infrastructure and cybersecurity across all company divisions.',
-          image: ITImage,
-          linkedin: '#',
-          instagram: '#'
-        }
+      name: 'Schola MUTIMA',
+      position: 'Legal Officer',
+      bio: 'Legal advisor ensuring compliance with regulations, managing contracts, and protecting the legal interests of the organization.',
+      image: legal,
+      linkedin: '#',
+      instagram: '#'
+    }
   ];
 
   return (
@@ -96,15 +92,15 @@ const AboutPage = () => {
           <div className="absolute top-20 right-20 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
           <div className="absolute bottom-20 left-20 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
         </div>
-        
+
         <div className="relative max-w-7xl mx-auto px-6 text-center">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-5xl font-bold mb-6"
           >
-            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Story</span>
+            Who <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">We Are</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -112,7 +108,7 @@ const AboutPage = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto"
           >
-            Building the future through innovation, integrity, and impactful solutions.
+            We Build the future through innovation, integrity, and impactful solutions.
           </motion.p>
         </div>
       </section>
@@ -132,7 +128,7 @@ const AboutPage = () => {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Company Overview</h2>
               <p className="text-lg text-gray-600">
                 SKAFF INVEST R GROUP is a diversified holding company with a portfolio of specialized subsidiaries across multiple industries.
-                Founded in 2010, we've grown from a single business unit to a conglomerate with presence in technology, construction,
+                Founded in 2019, we've grown from a single business unit to a conglomerate with presence in technology, construction,
                 media, and more. Our companies work synergistically to deliver comprehensive solutions to our clients worldwide.
               </p>
             </div>
@@ -146,7 +142,7 @@ const AboutPage = () => {
           transition={{ duration: 0.6 }}
           className="grid md:grid-cols-3 gap-8 mb-16"
         >
-          <motion.div 
+          <motion.div
             whileHover={{ y: -5 }}
             className="bg-white p-8 rounded-xl shadow-lg"
           >
@@ -159,7 +155,7 @@ const AboutPage = () => {
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             whileHover={{ y: -5 }}
             className="bg-white p-8 rounded-xl shadow-lg"
           >
@@ -172,7 +168,7 @@ const AboutPage = () => {
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             whileHover={{ y: -5 }}
             className="bg-white p-8 rounded-xl shadow-lg"
           >
@@ -342,9 +338,9 @@ const AboutPage = () => {
                   </motion.li>
                 ))}
               </ul>
-                <p className="text-gray-600 mb-6">
-                    We are committed to making a positive difference in the world, one community at a time.
-                </p>
+              <p className="text-gray-600 mb-6">
+                We are committed to making a positive difference in the world, one community at a time.
+              </p>
             </div>
             <div className="hidden md:block md:w-1/2 bg-[url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')] bg-cover bg-center" />
           </div>
