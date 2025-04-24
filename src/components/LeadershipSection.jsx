@@ -1,8 +1,8 @@
 import React from 'react';
 import { FaLinkedin, FaInstagram } from 'react-icons/fa';
-import CEOImage from '../assets/ceo.jpg';
+import CEOImage from '../assets/founder.jpg';
 import OpsImage from '../assets/operations.jpg';
-import ITImage from '../assets/it.jpg';
+import ITImage from '../assets/ceo.jpg';
 import COS from '../assets/cos.jpg';
 
 const LeadershipSection = () => {
@@ -11,7 +11,7 @@ const LeadershipSection = () => {
       name: 'Mr Reuben IRIHOSE',
       position: 'Founder & Chairman',
       bio: 'Visionary leader with 15+ years of experience in global investments and business strategy. Drives innovation and strategic direction across all SKAFF INVEST R GROUP subsidiaries.',
-      image: ITImage,
+      image: CEOImage,
       linkedin: '#',
       instagram: '#'
     },
@@ -35,7 +35,7 @@ const LeadershipSection = () => {
       name: 'Ernest HAGUMA KWIZERA',
       position: 'IT Director',
       bio: 'Full-stack tech expert responsible for designing, implementing, and securing digital systems powering all SKAFF INVEST R GROUP companies.',
-      image: CEOImage,
+      image: ITImage,
       linkedin: 'https://www.linkedin.com/in/ernest-haguma-kwizera-709195241/',
       instagram: 'https://www.instagram.com/squach_cj_zeden/'
     },
