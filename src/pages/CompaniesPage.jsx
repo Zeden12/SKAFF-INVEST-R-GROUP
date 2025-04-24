@@ -20,7 +20,7 @@ const companies = [
     name: 'DEVNEX HiTech', 
     tagline: 'Technology Solutions',
     logo: DevnexLogo,
-    website: 'https://devnex.com',
+    website: 'https://devnexhitech.vercel.app/',
     bgColor: 'bg-blue-50',
     description: 'Cutting-edge software development, SaaS solutions, and IT infrastructure services for businesses of all sizes.',
     stats: {
@@ -29,6 +29,62 @@ const companies = [
       years: '3'
     },
     services: ['Custom Software', 'Cloud Solutions', 'SaaS Solutions', 'Cybersecurity', 'AI Integration', 'IT Consulting', 'Support Services']
+  },
+  { 
+    name: 'SIE Programme', 
+    tagline: 'Education Programs',
+    logo: SIELogo,
+    website: 'https://www.instagram.com/sie_program?igsh=MXZmYWt5emdraGR4NQ==',
+    bgColor: 'bg-teal-50',
+    description: 'Innovative educational programs and vocational training for skills development and career advancement.',
+    stats: {
+      students: '50,000+',
+      courses: '120+',
+      partners: '200+'
+    },
+    services: ['Vocational Training', 'Online Courses', 'Corporate Workshops', 'Career Counseling']
+  },
+  { 
+    name: 'ROS Music', 
+    tagline: 'Music Production',
+    logo: RosMusicLogo,
+    website: 'https://www.instagram.com/ros_music__?igsh=OGhldnFvY2NqY20x',
+    bgColor: 'bg-yellow-50',
+    description: 'Full-service music production company specializing in recording, publishing, and artist development.',
+    stats: {
+      artists: '300+',
+      albums: '500+',
+      awards: '40+'
+    },
+    services: ['Recording Studio', 'Music Publishing', 'Artist Management', 'Event Production']
+  },
+  { 
+    name: 'INZOOM Capture', 
+    tagline: 'Video and Photography',
+    logo: InzoomLogo,
+    website: 'https://www.instagram.com/inzoom_capture?igsh=Mm52M2prbzgwYm1l',
+    bgColor: 'bg-purple-50',
+    description: 'Professional media production services for commercials, documentaries, and corporate content.',
+    stats: {
+      projects: '900+',
+      clients: '300+',
+      hours: '10,000+'
+    },
+    services: ['Video Production', 'Photography', 'Post-Production', 'Live Streaming']
+  },
+  { 
+    name: 'Skaff TV', 
+    tagline: 'Broadcasting Agency and Media',
+    logo: SkaffTvLogo,
+    website: 'https://youtube.com/@skafftvrda?si=xxG2Z85N7ei8JQP4',
+    bgColor: 'bg-orange-50',
+    description: 'Leading media broadcasting network delivering news, entertainment, and educational content.',
+    stats: {
+      channels: '5',
+      viewers: '20M+',
+      programs: '100+'
+    },
+    services: ['TV Production', 'Content Distribution', 'Media Buying', 'Broadcast Solutions']
   },
   { 
     name: 'Skaff Market Place', 
@@ -45,94 +101,10 @@ const companies = [
     services: ['Online Storefronts', 'Buy Products & Services', 'Sell your Products & Services', 'Payment Processing', 'Inventory Management', 'Marketplace Solutions']
   },
   { 
-    name: 'BluePrint Graphix Tech', 
-    tagline: 'Design & Branding',
-    logo: BlueprintLogo,
-    website: 'https://blueprintgraphix.com',
-    bgColor: 'bg-pink-50',
-    description: 'Full-service creative agency specializing in brand identity, digital design, and marketing collateral.',
-    stats: {
-      brands: '800+',
-      campaigns: '100+',
-      awards: '5'
-    },
-    services: ['Logo Design','Banner Design', 'Brand Strategy', 'Print Media', 'Digital Advertising Boards', 'Social Media Graphics']
-  },
-  { 
-    name: 'INZOOM Capture', 
-    tagline: 'Video and Photography',
-    logo: InzoomLogo,
-    website: 'https://inzoomcapture.com',
-    bgColor: 'bg-purple-50',
-    description: 'Professional media production services for commercials, documentaries, and corporate content.',
-    stats: {
-      projects: '900+',
-      clients: '300+',
-      hours: '10,000+'
-    },
-    services: ['Video Production', 'Photography', 'Post-Production', 'Live Streaming']
-  },
-  { 
-    name: 'Skaff Brand New', 
-    tagline: 'Fashion House',
-    logo: BrandNewLogo,
-    website: 'https://skaffbrandnew.com',
-    bgColor: 'bg-indigo-50',
-    description: 'Trendsetting fashion brand offering premium apparel and accessories for modern consumers.',
-    stats: {
-      collections: '15+',
-      stores: '25',
-      countries: '8'
-    },
-    services: ['Apparel Design', 'Retail Solutions', 'Brand Licensing', 'Fashion Consulting']
-  },
-  { 
-    name: 'SIE Programme', 
-    tagline: 'Education Programs',
-    logo: SIELogo,
-    website: 'https://sieprogramme.com',
-    bgColor: 'bg-teal-50',
-    description: 'Innovative educational programs and vocational training for skills development and career advancement.',
-    stats: {
-      students: '50,000+',
-      courses: '120+',
-      partners: '200+'
-    },
-    services: ['Vocational Training', 'Online Courses', 'Corporate Workshops', 'Career Counseling']
-  },
-  { 
-    name: 'ROS Music', 
-    tagline: 'Music Production',
-    logo: RosMusicLogo,
-    website: 'https://rosmusic.com',
-    bgColor: 'bg-yellow-50',
-    description: 'Full-service music production company specializing in recording, publishing, and artist development.',
-    stats: {
-      artists: '300+',
-      albums: '500+',
-      awards: '40+'
-    },
-    services: ['Recording Studio', 'Music Publishing', 'Artist Management', 'Event Production']
-  },
-  { 
-    name: 'Skaff Arch Construct', 
-    tagline: 'Architectural Design and Construction',
-    logo: SkaffArchLogo,
-    website: 'https://skaffarch.com',
-    bgColor: 'bg-green-50',
-    description: 'Award-winning architectural firm specializing in sustainable and innovative building designs.',
-    stats: {
-      projects: '400+',
-      countries: '12',
-      awards: '18'
-    },
-    services: ['Architectural Design', 'Interior Design', 'Urban Planning', 'Project Management']
-  },
-  { 
     name: 'Skaff Industry', 
     tagline: 'Industrial Solutions',
     logo: SkaffIndustryLogo,
-    website: 'https://skaffindustry.com',
+    website: 'https://www.instagram.com/skaff__industry/profilecard/?igsh=c3ZjMjNoNW40Mjc4',
     bgColor: 'bg-orange-50',
     description: 'Comprehensive industrial services including manufacturing, logistics, and equipment solutions.',
     stats: {
@@ -143,10 +115,52 @@ const companies = [
     services: ['Manufacturing', 'Industrial Automation', 'Equipment Supply', 'Maintenance Services']
   },
   { 
+    name: 'Skaff Brand New', 
+    tagline: 'Fashion House',
+    logo: BrandNewLogo,
+    website: 'https://www.instagram.com/skaff_brand_new?igsh=aTZmcWMxZDk0ajU0',
+    bgColor: 'bg-indigo-50',
+    description: 'Trendsetting fashion brand offering premium apparel and accessories for modern consumers.',
+    stats: {
+      collections: '15+',
+      stores: '25',
+      countries: '8'
+    },
+    services: ['Apparel Design', 'Retail Solutions', 'Brand Licensing', 'Fashion Consulting']
+  },
+  { 
+    name: 'BluePrint Graphix Tech', 
+    tagline: 'Design & Branding',
+    logo: BlueprintLogo,
+    website: 'https://www.instagram.com/blueprintgraphixtechnology?igsh=aGZ2NHZkM3J0OXBp ',
+    bgColor: 'bg-pink-50',
+    description: 'Full-service creative agency specializing in brand identity, digital design, and marketing collateral.',
+    stats: {
+      brands: '800+',
+      campaigns: '100+',
+      awards: '5'
+    },
+    services: ['Logo Design','Banner Design', 'Brand Strategy', 'Print Media', 'Digital Advertising Boards', 'Social Media Graphics']
+  },
+  { 
+    name: 'Skaff Arch Construct', 
+    tagline: 'Architectural Design and Construction',
+    logo: SkaffArchLogo,
+    website: 'https://www.instagram.com/skaff_arch_construct?igsh=YXh4a2swY2UyeGwx',
+    bgColor: 'bg-green-50',
+    description: 'Award-winning architectural firm specializing in sustainable and innovative building designs.',
+    stats: {
+      projects: '400+',
+      countries: '12',
+      awards: '18'
+    },
+    services: ['Architectural Design', 'Interior Design', 'Urban Planning', 'Project Management']
+  },
+  { 
     name: 'SAVANA Films', 
     tagline: 'Film Production',
     logo: SavanaLogo,
-    website: 'https://savanafilms.com',
+    website: 'https://www.instagram.com/savana_film?igsh=MXNhbGdhMXZpa2poNA==',
     bgColor: 'bg-amber-50',
     description: 'Feature film and television production company creating compelling content for global audiences.',
     stats: {
@@ -155,20 +169,6 @@ const companies = [
       platforms: '10+'
     },
     services: ['Film Production', 'Script Development', 'Distribution', 'Film Financing']
-  },
-  { 
-    name: 'Skaff TV', 
-    tagline: 'Broadcasting Agency and Media',
-    logo: SkaffTvLogo,
-    website: 'https://skafftv.com',
-    bgColor: 'bg-orange-50',
-    description: 'Leading media broadcasting network delivering news, entertainment, and educational content.',
-    stats: {
-      channels: '5',
-      viewers: '20M+',
-      programs: '100+'
-    },
-    services: ['TV Production', 'Content Distribution', 'Media Buying', 'Broadcast Solutions']
   },
   { 
     name: 'Skaff Sports Club', 

@@ -20,9 +20,33 @@ const companies = [
     name: 'DEVNEX HiTech', 
     tagline: 'Technology Solutions',
     logo: DevnexLogo,
-    website: 'https://devnex.com',
+    website: 'https://devnexhitech.vercel.app/',
     bgColor: 'bg-blue-50',
     borderColor: 'border-blue-100'
+  },
+  { 
+    name: 'SIE Programme', 
+    tagline: 'Education Programs',
+    logo: SIELogo,
+    website: 'https://www.instagram.com/sie_program?igsh=MXZmYWt5emdraGR4NQ==',
+    bgColor: 'bg-teal-50',
+    borderColor: 'border-teal-100'
+  },
+  { 
+    name: 'ROS Music', 
+    tagline: 'Music Production',
+    logo: RosMusicLogo,
+    website: 'https://www.instagram.com/ros_music__?igsh=OGhldnFvY2NqY20x',
+    bgColor: 'bg-yellow-50',
+    borderColor: 'border-yellow-100'
+  },
+  { 
+    name: 'Skaff Industry', 
+    tagline: 'Industrial Solutions',
+    logo: SkaffIndustryLogo,
+    website: 'https://www.instagram.com/skaff__industry/profilecard/?igsh=c3ZjMjNoNW40Mjc4',
+    bgColor: 'bg-orange-50',
+    borderColor: 'border-orange-100'
   },
   { 
     name: 'Skaff Market Place', 
@@ -33,76 +57,52 @@ const companies = [
     borderColor: 'border-red-100'
   },
   { 
-    name: 'BluePrint Graphix Tech', 
-    tagline: 'Design & Branding',
-    logo: BlueprintLogo,
-    website: 'https://blueprintgraphix.com',
-    bgColor: 'bg-pink-50',
-    borderColor: 'border-pink-100'
+    name: 'Skaff TV', 
+    tagline: 'Broadcasting and Media Agency',
+    logo: SkaffTvLogo,
+    website: 'https://youtube.com/@skafftvrda?si=xxG2Z85N7ei8JQP4',
+    bgColor: 'bg-orange-50',
+    borderColor: 'border-orange-100'
   },
   { 
     name: 'INZOOM Capture', 
     tagline: 'Video and Photography',
     logo: InzoomLogo,
-    website: 'https://inzoomcapture.com',
+    website: 'https://www.instagram.com/inzoom_capture?igsh=Mm52M2prbzgwYm1l',
     bgColor: 'bg-purple-50',
     borderColor: 'border-purple-100'
+  },
+  { 
+    name: 'BluePrint Graphix Tech', 
+    tagline: 'Design & Branding',
+    logo: BlueprintLogo,
+    website: 'https://www.instagram.com/blueprintgraphixtechnology?igsh=aGZ2NHZkM3J0OXBp',
+    bgColor: 'bg-pink-50',
+    borderColor: 'border-pink-100'
   },
   { 
     name: 'Skaff Brand New', 
     tagline: 'Collection and fashion House',
     logo: BrandNewLogo,
-    website: 'https://skaffbrandnew.com',
+    website: 'https://www.instagram.com/skaff_brand_new?igsh=aTZmcWMxZDk0ajU0',
     bgColor: 'bg-indigo-50',
     borderColor: 'border-indigo-100'
-  },
-  { 
-    name: 'SIE Programme', 
-    tagline: 'Education Programs',
-    logo: SIELogo,
-    website: 'https://sieprogramme.com',
-    bgColor: 'bg-teal-50',
-    borderColor: 'border-teal-100'
-  },
-  { 
-    name: 'ROS Music', 
-    tagline: 'Music Production',
-    logo: RosMusicLogo,
-    website: 'https://rosmusic.com',
-    bgColor: 'bg-yellow-50',
-    borderColor: 'border-yellow-100'
   },
   { 
     name: 'Skaff Arch Construct', 
     tagline: 'Architectural Design',
     logo: SkaffArchLogo,
-    website: 'https://skaffarch.com',
+    website: 'https://www.instagram.com/skaff_arch_construct?igsh=YXh4a2swY2UyeGwx',
     bgColor: 'bg-green-50',
     borderColor: 'border-green-100'
-  },
-  { 
-    name: 'Skaff Industry', 
-    tagline: 'Industrial Solutions',
-    logo: SkaffIndustryLogo,
-    website: 'https://skaffindustry.com',
-    bgColor: 'bg-orange-50',
-    borderColor: 'border-orange-100'
   },
   { 
     name: 'SAVANA Films', 
     tagline: 'Film Production',
     logo: SavanaLogo,
-    website: 'https://savanafilms.com',
+    website: 'https://www.instagram.com/savana_film?igsh=MXNhbGdhMXZpa2poNA==',
     bgColor: 'bg-amber-50',
     borderColor: 'border-amber-100'
-  },
-  { 
-    name: 'Skaff TV', 
-    tagline: 'Broadcasting and Media Agency',
-    logo: SkaffTvLogo,
-    website: 'https://skafftv.com',
-    bgColor: 'bg-orange-50',
-    borderColor: 'border-orange-100'
   },
   { 
     name: 'Skaff Sports Club', 
