@@ -68,7 +68,7 @@ const AboutPage = () => {
       instagram: 'https://www.instagram.com/squach_cj_zeden/'
     },
     {
-      name: 'Honorine UWASE',
+      name: 'Honorine MUTIMAWASE',
       position: 'Chief Financial Officer',
       bio: 'Finance leader overseeing budgeting, financial reporting, and investment strategies to ensure the group’s financial sustainability.',
       image: finance,
