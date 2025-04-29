@@ -11,7 +11,7 @@ const LeadershipSection = () => {
       name: 'Mr Reuben IRIHOSE',
       position: 'Founder & Chairman',
       bio: 'Visionary leader with 15+ years of experience in global investments and business strategy. Drives innovation and strategic direction across all SKAFF INVEST R GROUP subsidiaries.',
-      image: CEOImage,
+      // image: CEOImage,
       linkedin: '#',
       instagram: '#'
     },
@@ -19,7 +19,7 @@ const LeadershipSection = () => {
       name: 'Mr James NKURUNZIZA',
       position: 'Chief Operations Officer',
       bio: 'Expert in operational excellence with a proven record of scaling businesses internationally. Leads operations to ensure efficiency and performance across all units.',
-      image: OpsImage,
+      // image: OpsImage,
       linkedin: '#',
       instagram: '#'
     },
@@ -27,7 +27,7 @@ const LeadershipSection = () => {
           name: 'Phionah UWASE',
           position: 'Chief of Staff',
           bio: 'Coordinates executive functions and strategic initiatives while supporting smooth cross-departmental collaboration.',
-          image: COS,
+          // image: COS,
           linkedin: '#',
           instagram: '#'
         },
@@ -35,7 +35,7 @@ const LeadershipSection = () => {
       name: 'Ernest HAGUMA KWIZERA',
       position: 'IT Director',
       bio: 'Full-stack tech expert responsible for designing, implementing, and securing digital systems powering all SKAFF INVEST R GROUP companies.',
-      image: ITImage,
+      // image: ITImage,
       linkedin: 'https://www.linkedin.com/in/ernest-haguma-kwizera-709195241/',
       instagram: 'https://www.instagram.com/squach_cj_zeden/'
     },
