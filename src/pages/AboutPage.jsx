@@ -14,7 +14,7 @@ import MarketingImage from '../assets/marketing.jpg';
 import ITImage from '../assets/ceo.jpg';
 import COS from '../assets/cos.jpg';
 import legal from '../assets/legal.jpg';
-import HR from '../assets/hr.jpg';
+import HR from '../assets/HR.jpg';
 import finance from '../assets/finance.jpg';
 
 const AboutPage = () => {
@@ -23,7 +23,7 @@ const AboutPage = () => {
       name: 'Mr Reuben IRIHOSE',
       position: 'Founder & Chairman',
       bio: 'Visionary leader with 15+ years of experience in global investments and business strategy. Drives innovation and strategic direction across all SKAFF INVEST R GROUP subsidiaries.',
-      // image: CEOImage,
+      image: CEOImage,
       linkedin: '#',
       instagram: '#'
     },
@@ -31,7 +31,7 @@ const AboutPage = () => {
       name: 'Mr James NKURUNZIZA',
       position: 'Chief Operations Officer',
       bio: 'Expert in operational excellence with a proven record of scaling businesses internationally. Leads operations to ensure efficiency and performance across all units.',
-      // image: OpsImage,
+      image: OpsImage,
       linkedin: '#',
       instagram: '#'
     },
@@ -39,7 +39,7 @@ const AboutPage = () => {
       name: 'Phionah UWASE',
       position: 'Chief of Staff',
       bio: 'Coordinates executive functions and strategic initiatives while supporting smooth cross-departmental collaboration.',
-      // image: COS,
+      image: COS,
       linkedin: '#',
       instagram: '#'
     },
@@ -47,7 +47,7 @@ const AboutPage = () => {
       name: 'Mubaraka NIZEYIMANA',
       position: 'Chief Marketing Officer',
       bio: 'Creative brand strategist leading innovative marketing campaigns, digital growth, and customer engagement strategies.',
-      // image: MarketingImage,
+      image: MarketingImage,
       linkedin: '#',
       instagram: '#'
     },
@@ -55,7 +55,7 @@ const AboutPage = () => {
       name: 'ICYEZA MIZERO Fortune',
       position: 'Human Resources Officer',
       bio: 'Passionate HR professional managing recruitment, employee well-being, and talent development across the group.',
-      // image: HR,
+      image: HR,
       linkedin: '#',
       instagram: '#'
     },
@@ -63,7 +63,7 @@ const AboutPage = () => {
       name: 'Ernest HAGUMA KWIZERA',
       position: 'IT Director',
       bio: 'Full-stack tech expert responsible for designing, implementing, and securing digital systems powering all SKAFF INVEST R GROUP companies.',
-      // image: ITImage,
+      image: ITImage,
       linkedin: 'https://www.linkedin.com/in/ernest-haguma-kwizera-709195241/',
       instagram: 'https://www.instagram.com/squach_cj_zeden/'
     },
@@ -71,7 +71,7 @@ const AboutPage = () => {
       name: 'Honorine MUTIMAWASE',
       position: 'Chief Financial Officer',
       bio: 'Finance leader overseeing budgeting, financial reporting, and investment strategies to ensure the group’s financial sustainability.',
-      // image: finance,
+      image: finance,
       linkedin: '#',
       instagram: '#'
     },
@@ -79,7 +79,7 @@ const AboutPage = () => {
       name: 'Schola MUTIMA',
       position: 'Legal Officer',
       bio: 'Legal advisor ensuring compliance with regulations, managing contracts, and protecting the legal interests of the organization.',
-      // image: legal,
+      image: legal,
       linkedin: '#',
       instagram: '#'
     }
