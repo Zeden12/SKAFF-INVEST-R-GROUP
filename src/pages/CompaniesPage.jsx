@@ -34,7 +34,7 @@ const companies = [
     name: 'SIE Programme', 
     tagline: 'Education Programs',
     logo: SIELogo,
-    website: 'https://www.instagram.com/sie_program?igsh=MXZmYWt5emdraGR4NQ==',
+    website: 'https://sie-programme.vercel.app/',
     bgColor: 'bg-teal-50',
     description: 'Innovative educational programs and vocational training for skills development and career advancement.',
     stats: {
