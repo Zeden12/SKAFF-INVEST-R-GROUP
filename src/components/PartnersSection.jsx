@@ -64,12 +64,12 @@ const OurCompanies = () => {
       logo: BrandNewLogo
     },
     { 
-      name: 'ROS Music', 
+      name: 'SKAFF RECORDS', 
       description: 'Music Production',
       logo: RosMusicLogo
     },
     { 
-      name: 'SIE Programme', 
+      name: 'SKAFF Academy', 
       description: 'Education Programs',
       logo: SIELogo
     },

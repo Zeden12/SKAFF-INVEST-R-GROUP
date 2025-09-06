@@ -25,7 +25,7 @@ const companies = [
     borderColor: 'border-blue-100'
   },
   { 
-    name: 'SIE Programme', 
+    name: 'SKAFF Academy', 
     tagline: 'Education Programs',
     logo: SIELogo,
     website: 'https://sie-programme.vercel.app/',
@@ -33,7 +33,7 @@ const companies = [
     borderColor: 'border-teal-100'
   },
   { 
-    name: 'ROS Music', 
+    name: 'SKAFF RECORDS', 
     tagline: 'Music Production',
     logo: RosMusicLogo,
     website: 'https://www.instagram.com/ros_music__?igsh=OGhldnFvY2NqY20x',

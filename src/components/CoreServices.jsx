@@ -35,7 +35,7 @@ const services = [
   { 
     icon: <FaGraduationCap className="text-teal-500" size={24} />, 
     title: 'Education Programs', 
-    desc: 'Cutting-edge vocational training and skill development initiatives under SIE Programme.',
+    desc: 'Cutting-edge vocational training and skill development initiatives under SKAFF Academy.',
     benefits: ['Industry-aligned curriculum', 'Expert instructors', 'Practical training']
   },
   { 
@@ -47,7 +47,7 @@ const services = [
   { 
     icon: <FaMusic className="text-yellow-500" size={24} />, 
     title: 'Audio Production', 
-    desc: 'Professional recording, mixing, and artist development services through ROS Music.',
+    desc: 'Professional recording, mixing, and artist development services through SKAFF RECORDS.',
     benefits: ['State-of-the-art studios', 'Talent scouting', 'Distribution networks']
   },
   { 

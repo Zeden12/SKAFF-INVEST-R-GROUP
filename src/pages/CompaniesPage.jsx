@@ -31,7 +31,7 @@ const companies = [
     services: ['Custom Software', 'Cloud Solutions', 'SaaS Solutions', 'Cybersecurity', 'AI Integration', 'IT Consulting', 'Support Services']
   },
   { 
-    name: 'SIE Programme', 
+    name: 'SKAFF Academy', 
     tagline: 'Education Programs',
     logo: SIELogo,
     website: 'https://sie-programme.vercel.app/',
@@ -45,7 +45,7 @@ const companies = [
     services: ['Vocational Training', 'Online Courses', 'Corporate Workshops', 'Career Counseling']
   },
   { 
-    name: 'ROS Music', 
+    name: 'SKAFF RECORDS', 
     tagline: 'Music Production',
     logo: RosMusicLogo,
     website: 'https://www.instagram.com/ros_music__?igsh=OGhldnFvY2NqY20x',
