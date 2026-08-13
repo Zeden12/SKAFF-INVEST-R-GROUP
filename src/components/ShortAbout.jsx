@@ -112,11 +112,11 @@ const ShortAbout = () => {
               <ChartBarIcon className="h-12 w-12 text-white mb-6" />
               <h2 className="text-3xl font-bold text-white mb-6">Our Success Story</h2>
               <p className="text-blue-100 mb-8">
-                SKAFF INVEST R GROUP began with a simple idea: to build value through vision and collaboration. Over the years, our resilience and dedication to quality have seen us expand into a group of 12 active companies across sectors, each playing a unique role in delivering integrated, future-ready solutions.
+                SKAFF INVEST R GROUP began with a simple idea: to build value through vision and collaboration. Over the years, our resilience and dedication to quality have seen us expand into a group of 15 active companies across sectors, each playing a unique role in delivering integrated, future-ready solutions.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { value: '12+', label: 'Companies' },
+                  { value: '15+', label: 'Companies' },
                   { value: '100+', label: 'Employees' },
                   { value: '9+', label: 'Countries' },
                   { value: '1000+', label: 'Clients Served' }

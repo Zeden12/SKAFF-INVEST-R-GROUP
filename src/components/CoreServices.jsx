@@ -1,29 +1,29 @@
 import React, { useState } from 'react';
-import { FaCode, FaBuilding, FaCamera, FaIndustry, FaPalette, FaShoppingCart, FaMusic, FaGraduationCap, FaFilm, FaChartLine } from 'react-icons/fa';
+import { FaCode, FaBuilding, FaCamera, FaIndustry, FaPalette, FaShoppingCart, FaMusic, FaGraduationCap, FaFilm, FaChartLine, FaLeaf, FaHeartbeat, FaMoneyBillWave } from 'react-icons/fa';
 
 const services = [
   { 
     icon: <FaCode className="text-blue-500" size={24} />, 
     title: 'Technology Solutions', 
-    desc: 'End-to-end digital transformation services including custom software development, cloud solutions, and AI integration through DEVNEX HiTech.',
+    desc: 'End-to-end digital transformation services including custom software development, cloud solutions, and AI integration through SKAFF DEVNEX.',
     benefits: ['Scalable systems', 'Future-proof tech', '24/7 support']
   },
   { 
     icon: <FaBuilding className="text-green-500" size={24} />, 
     title: 'Architecture & Engineering', 
-    desc: 'Comprehensive design and structural engineering solutions from concept to completion with Skaff Arch Struct.',
+    desc: 'Comprehensive design and structural engineering solutions from concept to completion with SKAFF ARCHITECTURE.',
     benefits: ['Innovative designs', 'Sustainable solutions', 'Precision engineering']
   },
   { 
     icon: <FaCamera className="text-purple-500" size={24} />, 
     title: 'Media Production', 
-    desc: 'Full-service content creation including 4K videography, professional photography, and digital media through INZOOM Capture.',
+    desc: 'Full-service content creation including 4K videography, professional photography, and digital media through SKAFF CAPTURE.',
     benefits: ['Studio quality', 'Creative storytelling', 'Multi-platform content']
   },
   { 
     icon: <FaPalette className="text-pink-500" size={24} />, 
     title: 'Design & Branding', 
-    desc: 'Strategic visual identity development and graphic design solutions crafted by BluePrint Graphix.',
+    desc: 'Strategic visual identity development and graphic design solutions crafted by SKAFF CORE GRAPHIX.',
     benefits: ['Brand consistency', 'Market research', 'Visual storytelling']
   },
   { 
@@ -41,13 +41,13 @@ const services = [
   { 
     icon: <FaChartLine className="text-indigo-500" size={24} />, 
     title: 'Brand Strategy', 
-    desc: 'Comprehensive market positioning and growth strategies developed by Skaff Brand New.',
+    desc: 'Comprehensive market positioning and growth strategies developed by SKAFF LUXIZORA.',
     benefits: ['Competitive analysis', 'Audience targeting', 'Performance metrics']
   },
   { 
     icon: <FaMusic className="text-yellow-500" size={24} />, 
     title: 'Audio Production', 
-    desc: 'Professional recording, mixing, and artist development services through SKAFF RECORDS.',
+    desc: 'Professional recording, mixing, and artist development services through SKAFF GLOBAL MUSIC.',
     benefits: ['State-of-the-art studios', 'Talent scouting', 'Distribution networks']
   },
   { 
@@ -59,13 +59,13 @@ const services = [
   { 
     icon: <FaFilm className="text-amber-500" size={24} />, 
     title: 'Film Production', 
-    desc: 'Feature film and commercial production services including post-production at SAVANA Films.',
+    desc: 'Feature film and commercial production services including post-production at SKAFF FILMS.',
     benefits: ['Award-winning crews', '4K/8K capabilities', 'Global distribution']
   },
   { 
     icon: <FaCode className="text-blue-500" size={24} />, 
     title: 'Broadcasting Solutions',
-    desc: 'Comprehensive media broadcasting and streaming services through Skaff TV.', 
+    desc: 'Comprehensive media broadcasting and streaming services through SKAFF BROADCASTING AGENCY.', 
     benefits: ['Advertisement','Live streaming', 'Content syndication', 'Multi-platform reach']
   },
   { 
@@ -73,6 +73,24 @@ const services = [
     title: 'Empowering sports',
     desc: 'Comprehensive sports management and event organization services.',
     benefits: ['Event management', 'Athlete representation', 'Sponsorship acquisition']
+  },
+  {
+    icon: <FaLeaf className="text-green-500" size={24} />,
+    title: 'Agriculture & Agribusiness',
+    desc: 'Sustainable farming solutions, agro-processing, and market linkages delivered through AgriHub.',
+    benefits: ['Farm input supply', 'Agro-processing', 'Farmer training', 'Market access']
+  },
+  {
+    icon: <FaHeartbeat className="text-rose-500" size={24} />,
+    title: 'Healthcare Services',
+    desc: 'Quality medical care and wellness programs improving community health through Medical Health.',
+    benefits: ['Medical consultations', 'Diagnostics & labs', 'Wellness programs', 'Medical supplies']
+  },
+  {
+    icon: <FaMoneyBillWave className="text-emerald-500" size={24} />,
+    title: 'Financial Technology',
+    desc: 'Digital payments, money transfer, and banking solutions powered by Skaff MoneyHost.',
+    benefits: ['Digital payments', 'Money transfer', 'Mobile banking', 'Financial advisory']
   },
 ];
 

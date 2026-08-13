@@ -2,22 +2,25 @@ import React, { useState } from 'react';
 import { FaExternalLinkAlt, FaChartLine, FaUsers, FaGlobeAmericas, FaHandshake } from 'react-icons/fa';
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 import { motion } from 'framer-motion';
-import DevnexLogo from '../assets/devnex.jpg';
-import SkaffArchLogo from '../assets/skaffconstruction1.jpg';
-import InzoomLogo from '../assets/inzoomcapture.jpg';
-import SkaffIndustryLogo from '../assets/skaffindustry.jpg';
-import BlueprintLogo from '../assets/blueprintgraphics.jpg';
+import DevnexLogo from '../assets/skaffdevnex.jpeg';
+import SkaffArchLogo from '../assets/skaffarchitecture.jpeg';
+import InzoomLogo from '../assets/skaffcapture.jpeg';
+import SkaffIndustryLogo from '../assets/skaffindustry.jpeg';
+import BlueprintLogo from '../assets/skaffcoregraphix.jpeg';
 import MarketPlaceLogo from '../assets/skaffmarket.jpg';
-import BrandNewLogo from '../assets/skaffbrandnew.jpg';
-import RosMusicLogo from '../assets/rosmusic.jpg';
+import BrandNewLogo from '../assets/skaffluxizora.jpeg';
+import RosMusicLogo from '../assets/skaffglobalmusic.jpeg';
 import SIELogo from '../assets/SIE.jpg';
-import SavanaLogo from '../assets/savanafilms.jpg';
-import SkaffTvLogo from '../assets/skafftv.jpg';
-import SkaffSportLogo from '../assets/sport.jpg';
+import SavanaLogo from '../assets/skafffilms.jpeg';
+import SkaffTvLogo from '../assets/skaffbroadcasting.jpeg';
+import SkaffSportLogo from '../assets/skaffsport.jpeg';
+import AgriHubLogo from '../assets/agrihub.jpeg';
+import MedicalHealthLogo from '../assets/medicalhealth.jpeg';
+import MoneyHostLogo from '../assets/skaff.jpg';
 
 const companies = [
   { 
-    name: 'DEVNEX HiTech', 
+    name: 'SKAFF DEVNEX', 
     tagline: 'Technology Solutions',
     logo: DevnexLogo,
     website: 'https://devnexhitech.vercel.app/',
@@ -45,7 +48,7 @@ const companies = [
     services: ['Vocational Training', 'Online Courses', 'Corporate Workshops', 'Career Counseling']
   },
   { 
-    name: 'SKAFF RECORDS', 
+    name: 'SKAFF GLOBAL MUSIC', 
     tagline: 'Music Production',
     logo: RosMusicLogo,
     website: 'https://www.instagram.com/ros_music__?igsh=OGhldnFvY2NqY20x',
@@ -59,7 +62,7 @@ const companies = [
     services: ['Recording Studio', 'Music Publishing', 'Artist Management', 'Event Production']
   },
   { 
-    name: 'INZOOM Capture', 
+    name: 'SKAFF CAPTURE', 
     tagline: 'Video and Photography',
     logo: InzoomLogo,
     website: 'https://www.instagram.com/inzoom_capture?igsh=Mm52M2prbzgwYm1l',
@@ -73,7 +76,7 @@ const companies = [
     services: ['Video Production', 'Photography', 'Post-Production', 'Live Streaming']
   },
   { 
-    name: 'Skaff TV', 
+    name: 'SKAFF BROADCASTING AGENCY', 
     tagline: 'Broadcasting Agency and Media',
     logo: SkaffTvLogo,
     website: 'https://youtube.com/@skafftvrda?si=xxG2Z85N7ei8JQP4',
@@ -115,7 +118,7 @@ const companies = [
     services: ['Manufacturing', 'Industrial Automation', 'Equipment Supply', 'Maintenance Services']
   },
   { 
-    name: 'Skaff Brand New', 
+    name: 'SKAFF LUXIZORA', 
     tagline: 'Fashion House',
     logo: BrandNewLogo,
     website: 'https://www.instagram.com/skaff_brand_new?igsh=aTZmcWMxZDk0ajU0',
@@ -129,7 +132,7 @@ const companies = [
     services: ['Apparel Design', 'Retail Solutions', 'Brand Licensing', 'Fashion Consulting']
   },
   { 
-    name: 'BluePrint Graphix Tech', 
+    name: 'SKAFF CORE GRAPHIX', 
     tagline: 'Design & Branding',
     logo: BlueprintLogo,
     website: 'https://www.instagram.com/blueprintgraphixtechnology?igsh=aGZ2NHZkM3J0OXBp ',
@@ -143,7 +146,7 @@ const companies = [
     services: ['Logo Design','Banner Design', 'Brand Strategy', 'Print Media', 'Digital Advertising Boards', 'Social Media Graphics']
   },
   { 
-    name: 'Skaff Arch Construct', 
+    name: 'SKAFF ARCHITECTURE', 
     tagline: 'Architectural Design and Construction',
     logo: SkaffArchLogo,
     website: 'https://www.instagram.com/skaff_arch_construct?igsh=YXh4a2swY2UyeGwx',
@@ -157,7 +160,7 @@ const companies = [
     services: ['Architectural Design', 'Interior Design', 'Urban Planning', 'Project Management']
   },
   { 
-    name: 'SAVANA Films', 
+    name: 'SKAFF FILMS', 
     tagline: 'Film Production',
     logo: SavanaLogo,
     website: 'https://www.instagram.com/savana_film?igsh=MXNhbGdhMXZpa2poNA==',
@@ -183,6 +186,48 @@ const companies = [
       events: '50+'
     },
     services: ['Athlete Management', 'Sports Facilities', 'Event Organization', 'Talent Development']
+  },
+  {
+    name: 'AgriHub',
+    tagline: 'Agriculture & Agribusiness',
+    logo: AgriHubLogo,
+    website: '#',
+    bgColor: 'bg-green-50',
+    description: 'Modern agribusiness solutions spanning farm inputs, agro-processing, and market linkages for sustainable agriculture.',
+    stats: {
+      farmers: '500+',
+      hectares: '200+',
+      products: '50+'
+    },
+    services: ['Farm Input Supply', 'Agro-Processing', 'Training & Extension', 'Market Linkages']
+  },
+  {
+    name: 'Medical Health',
+    tagline: 'Healthcare Services',
+    logo: MedicalHealthLogo,
+    website: '#',
+    bgColor: 'bg-rose-50',
+    description: 'Quality healthcare services and medical solutions designed to improve community well-being and expand access to care.',
+    stats: {
+      patients: '5,000+',
+      facilities: '5',
+      services: '20+'
+    },
+    services: ['Medical Consultations', 'Diagnostics & Labs', 'Wellness Programs', 'Medical Supplies']
+  },
+  {
+    name: 'Skaff MoneyHost',
+    tagline: 'Financial Technology',
+    logo: MoneyHostLogo,
+    website: '#',
+    bgColor: 'bg-emerald-50',
+    description: 'Digital financial services platform enabling seamless payments, money transfers, and accessible banking solutions.',
+    stats: {
+      transactions: '100K+',
+      users: '10,000+',
+      partners: '50+'
+    },
+    services: ['Digital Payments', 'Money Transfer', 'Mobile Banking', 'Financial Advisory']
   }
 ];
 
@@ -249,7 +294,7 @@ const CompaniesPage = () => {
       >
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           {[
-            { icon: <FaChartLine className="h-10 w-10 text-blue-600 mx-auto mb-3" />, value: '12+', label: 'Specialized Companies' },
+            { icon: <FaChartLine className="h-10 w-10 text-blue-600 mx-auto mb-3" />, value: '15+', label: 'Specialized Companies' },
             { icon: <FaUsers className="h-10 w-10 text-blue-600 mx-auto mb-3" />, value: '50+', label: 'Dedicated Employees' },
             { icon: <FaGlobeAmericas className="h-10 w-10 text-blue-600 mx-auto mb-3" />, value: '3+', label: 'Countries Served' },
             { icon: <FaHandshake className="h-10 w-10 text-blue-600 mx-auto mb-3" />, value: '100+', label: 'Satisfied Clients' }
@@ -347,15 +392,17 @@ const CompaniesPage = () => {
                         </motion.li>
                       ))}
                     </ul>
-                    <motion.a
-                      whileHover={{ scale: 1.02 }}
-                      href={company.website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-4 inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
-                    >
-                      Visit Website <FaExternalLinkAlt className="ml-2" size={12} />
-                    </motion.a>
+                    {company.website && company.website !== '#' && (
+                      <motion.a
+                        whileHover={{ scale: 1.02 }}
+                        href={company.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-4 inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                      >
+                        Visit Website <FaExternalLinkAlt className="ml-2" size={12} />
+                      </motion.a>
+                    )}
                   </motion.div>
                 )}
               </div>

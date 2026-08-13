@@ -8,7 +8,7 @@ const Hero = () => {
   const [currentStat, setCurrentStat] = useState(0);
   const stats = [
     { value: "1000+", label: "Successful Deals" },
-    { value: "12", label: "Subsidiary Companies" },
+    { value: "15", label: "Subsidiary Companies" },
     { value: "10", label: "Countries Operating" },
     { value: "100+", label: "Team Members" }
   ];

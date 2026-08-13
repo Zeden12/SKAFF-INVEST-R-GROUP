@@ -3,28 +3,31 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import DevnexLogo from '../assets/devnex.jpg';
-import SkaffArchLogo from '../assets/skaffconstruction1.jpg';
-import InzoomLogo from '../assets/inzoomcapture.jpg';
-import SkaffIndustryLogo from '../assets/skaffindustry.jpg';
-import BlueprintLogo from '../assets/blueprintgraphics.jpg';
+import DevnexLogo from '../assets/skaffdevnex.jpeg';
+import SkaffArchLogo from '../assets/skaffarchitecture.jpeg';
+import InzoomLogo from '../assets/skaffcapture.jpeg';
+import SkaffIndustryLogo from '../assets/skaffindustry.jpeg';
+import BlueprintLogo from '../assets/skaffcoregraphix.jpeg';
 import MarketPlaceLogo from '../assets/skaffmarket.jpg';
-import BrandNewLogo from '../assets/skaffbrandnew.jpg';
-import RosMusicLogo from '../assets/rosmusic.jpg';
+import BrandNewLogo from '../assets/skaffluxizora.jpeg';
+import RosMusicLogo from '../assets/skaffglobalmusic.jpeg';
 import SIELogo from '../assets/SIE.jpg';
-import SavanaLogo from '../assets/savanafilms.jpg';
-import SkaffTvLogo from '../assets/skafftv.jpg';
-import SkaffSportLogo from '../assets/sport.jpg';
+import SavanaLogo from '../assets/skafffilms.jpeg';
+import SkaffTvLogo from '../assets/skaffbroadcasting.jpeg';
+import SkaffSportLogo from '../assets/skaffsport.jpeg';
+import AgriHubLogo from '../assets/agrihub.jpeg';
+import MedicalHealthLogo from '../assets/medicalhealth.jpeg';
+import MoneyHostLogo from '../assets/skaff.jpg';
 
 const OurCompanies = () => {
   const companies = [
     { 
-      name: 'DEVNEX HiTech', 
+      name: 'SKAFF DEVNEX', 
       description: 'Technology Solutions',
       logo: DevnexLogo
     },
     { 
-      name: 'INZOOM Capture', 
+      name: 'SKAFF CAPTURE', 
       description: 'Media Production',
       logo: InzoomLogo
     },
@@ -34,24 +37,14 @@ const OurCompanies = () => {
       logo: SkaffIndustryLogo
     },
     { 
-      name: 'BluePrint Graphix', 
+      name: 'SKAFF CORE GRAPHIX', 
       description: 'Design & Branding',
       logo: BlueprintLogo
     },
     {
-      name: 'Skaff Arch Construct', 
+      name: 'SKAFF ARCHITECTURE', 
       description: 'Architectural Design',
       logo: SkaffArchLogo
-    },
-    { 
-      name: 'Skaff Construction', 
-      description: 'Construction Services',
-      logo: SkaffArchLogo
-    },
-    { 
-      name: 'Skaff Media', 
-      description: 'Media & Broadcasting',
-      logo: SkaffTvLogo
     },
     { 
       name: 'Skaff Market Place', 
@@ -59,12 +52,12 @@ const OurCompanies = () => {
       logo: MarketPlaceLogo
     },
     { 
-      name: 'Skaff Brand New', 
+      name: 'SKAFF LUXIZORA', 
       description: 'Brand Development',
       logo: BrandNewLogo
     },
     { 
-      name: 'SKAFF RECORDS', 
+      name: 'SKAFF GLOBAL MUSIC', 
       description: 'Music Production',
       logo: RosMusicLogo
     },
@@ -74,19 +67,34 @@ const OurCompanies = () => {
       logo: SIELogo
     },
     { 
-      name: 'SAVANA Films', 
+      name: 'SKAFF FILMS', 
       description: 'Film Production',
       logo: SavanaLogo
     },
     { 
-      name: 'SKAFF TV', 
+      name: 'SKAFF BROADCASTING AGENCY', 
       description: 'Broadcasting & Media',
       logo: SkaffTvLogo
     },
     { 
-      name: 'Skaff Sport Club', 
+      name: 'Skaff Sports Club', 
       description: 'Sports & Entertainment',
       logo: SkaffSportLogo
+    },
+    {
+      name: 'AgriHub',
+      description: 'Agriculture & Agribusiness',
+      logo: AgriHubLogo
+    },
+    {
+      name: 'Medical Health',
+      description: 'Healthcare Services',
+      logo: MedicalHealthLogo
+    },
+    {
+      name: 'Skaff MoneyHost',
+      description: 'Financial Technology',
+      logo: MoneyHostLogo
     }
   ];
 

@@ -2,22 +2,25 @@ import React, { useState } from 'react';
 import { FaExternalLinkAlt, FaChevronRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-import DevnexLogo from '../assets/devnex.jpg';
-import SkaffArchLogo from '../assets/skaffconstruction1.jpg';
-import InzoomLogo from '../assets/inzoomcapture.jpg';
-import SkaffIndustryLogo from '../assets/skaffindustry.jpg';
-import BlueprintLogo from '../assets/blueprintgraphics.jpg';
+import DevnexLogo from '../assets/skaffdevnex.jpeg';
+import SkaffArchLogo from '../assets/skaffarchitecture.jpeg';
+import InzoomLogo from '../assets/skaffcapture.jpeg';
+import SkaffIndustryLogo from '../assets/skaffindustry.jpeg';
+import BlueprintLogo from '../assets/skaffcoregraphix.jpeg';
 import MarketPlaceLogo from '../assets/skaffmarket.jpg';
-import BrandNewLogo from '../assets/skaffbrandnew.jpg';
-import RosMusicLogo from '../assets/rosmusic.jpg';
+import BrandNewLogo from '../assets/skaffluxizora.jpeg';
+import RosMusicLogo from '../assets/skaffglobalmusic.jpeg';
 import SIELogo from '../assets/SIE.jpg';
-import SavanaLogo from '../assets/savanafilms.jpg';
-import SkaffTvLogo from '../assets/skafftv.jpg';
-import SkaffSportLogo from '../assets/sport.jpg';
+import SavanaLogo from '../assets/skafffilms.jpeg';
+import SkaffTvLogo from '../assets/skaffbroadcasting.jpeg';
+import SkaffSportLogo from '../assets/skaffsport.jpeg';
+import AgriHubLogo from '../assets/agrihub.jpeg';
+import MedicalHealthLogo from '../assets/medicalhealth.jpeg';
+import MoneyHostLogo from '../assets/skaff.jpg';
 
 const companies = [
   { 
-    name: 'DEVNEX HiTech', 
+    name: 'SKAFF DEVNEX', 
     tagline: 'Technology Solutions',
     logo: DevnexLogo,
     website: 'https://devnexhitech.vercel.app/',
@@ -33,7 +36,7 @@ const companies = [
     borderColor: 'border-teal-100'
   },
   { 
-    name: 'SKAFF RECORDS', 
+    name: 'SKAFF GLOBAL MUSIC', 
     tagline: 'Music Production',
     logo: RosMusicLogo,
     website: 'https://www.instagram.com/ros_music__?igsh=OGhldnFvY2NqY20x',
@@ -57,7 +60,7 @@ const companies = [
     borderColor: 'border-red-100'
   },
   { 
-    name: 'Skaff TV', 
+    name: 'SKAFF BROADCASTING AGENCY', 
     tagline: 'Broadcasting and Media Agency',
     logo: SkaffTvLogo,
     website: 'https://youtube.com/@skafftvrda?si=xxG2Z85N7ei8JQP4',
@@ -65,7 +68,7 @@ const companies = [
     borderColor: 'border-orange-100'
   },
   { 
-    name: 'INZOOM Capture', 
+    name: 'SKAFF CAPTURE', 
     tagline: 'Video and Photography',
     logo: InzoomLogo,
     website: 'https://www.instagram.com/inzoom_capture?igsh=Mm52M2prbzgwYm1l',
@@ -73,7 +76,7 @@ const companies = [
     borderColor: 'border-purple-100'
   },
   { 
-    name: 'BluePrint Graphix Tech', 
+    name: 'SKAFF CORE GRAPHIX', 
     tagline: 'Design & Branding',
     logo: BlueprintLogo,
     website: 'https://www.instagram.com/blueprintgraphixtechnology?igsh=aGZ2NHZkM3J0OXBp',
@@ -81,7 +84,7 @@ const companies = [
     borderColor: 'border-pink-100'
   },
   { 
-    name: 'Skaff Brand New', 
+    name: 'SKAFF LUXIZORA', 
     tagline: 'Collection and fashion House',
     logo: BrandNewLogo,
     website: 'https://www.instagram.com/skaff_brand_new?igsh=aTZmcWMxZDk0ajU0',
@@ -89,7 +92,7 @@ const companies = [
     borderColor: 'border-indigo-100'
   },
   { 
-    name: 'Skaff Arch Construct', 
+    name: 'SKAFF ARCHITECTURE', 
     tagline: 'Architectural Design',
     logo: SkaffArchLogo,
     website: 'https://www.instagram.com/skaff_arch_construct?igsh=YXh4a2swY2UyeGwx',
@@ -97,20 +100,43 @@ const companies = [
     borderColor: 'border-green-100'
   },
   { 
-    name: 'SAVANA Films', 
+    name: 'SKAFF FILMS', 
     tagline: 'Film Production',
     logo: SavanaLogo,
     website: 'https://www.instagram.com/savana_film?igsh=MXNhbGdhMXZpa2poNA==',
     bgColor: 'bg-amber-50',
     borderColor: 'border-amber-100'
-  },
-  { 
-    name: 'Skaff Sports Club', 
+  },  {
+    name: 'Skaff Sports Club',
     tagline: 'Sports and Recreation',
     logo: SkaffSportLogo,
     website: 'https://skaffsports.com',
     bgColor: 'bg-orange-50',
     borderColor: 'border-orange-100'
+  },
+  {
+    name: 'AgriHub',
+    tagline: 'Agriculture & Agribusiness',
+    logo: AgriHubLogo,
+    website: '#',
+    bgColor: 'bg-green-50',
+    borderColor: 'border-green-100'
+  },
+  {
+    name: 'Medical Health',
+    tagline: 'Healthcare Services',
+    logo: MedicalHealthLogo,
+    website: '#',
+    bgColor: 'bg-rose-50',
+    borderColor: 'border-rose-100'
+  },
+  {
+    name: 'Skaff MoneyHost',
+    tagline: 'Financial Technology',
+    logo: MoneyHostLogo,
+    website: '#',
+    bgColor: 'bg-emerald-50',
+    borderColor: 'border-emerald-100'
   }
 ];
 
@@ -119,6 +145,7 @@ const OurCompanies = () => {
   const displayedCompanies = showAll ? companies : companies.slice(0, 10);
 
   const handleCompanyClick = (url) => {
+    if (!url || url === '#') return;
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
