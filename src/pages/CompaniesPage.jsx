@@ -16,7 +16,7 @@ import SkaffTvLogo from '../assets/skaffbroadcasting.jpeg';
 import SkaffSportLogo from '../assets/skaffsport.jpeg';
 import AgriHubLogo from '../assets/agrihub.jpeg';
 import MedicalHealthLogo from '../assets/medicalhealth.jpeg';
-import MoneyHostLogo from '../assets/skaff.jpg';
+import MoneyHostLogo from '../assets/skaffmoneyhost.jpeg';
 
 const companies = [
   { 
