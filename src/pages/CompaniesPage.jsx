@@ -118,8 +118,8 @@ const companies = [
     services: ['Manufacturing', 'Industrial Automation', 'Equipment Supply', 'Maintenance Services']
   },
   { 
-    name: 'SKAFF LUXIZORA', 
-    tagline: 'Fashion House',
+    name: 'SKAFF LUXORA', 
+    tagline: 'Correction and Fashion House',
     logo: BrandNewLogo,
     website: 'https://www.instagram.com/skaff_brand_new?igsh=aTZmcWMxZDk0ajU0',
     bgColor: 'bg-indigo-50',
@@ -188,7 +188,7 @@ const companies = [
     services: ['Athlete Management', 'Sports Facilities', 'Event Organization', 'Talent Development']
   },
   {
-    name: 'AgriHub',
+    name: 'SKAFF AGRI HUB',
     tagline: 'Agriculture & Agribusiness',
     logo: AgriHubLogo,
     website: '#',
@@ -202,7 +202,7 @@ const companies = [
     services: ['Farm Input Supply', 'Agro-Processing', 'Training & Extension', 'Market Linkages']
   },
   {
-    name: 'Medical Health',
+    name: 'SKAFF MEDICAL HEALTH',
     tagline: 'Healthcare Services',
     logo: MedicalHealthLogo,
     website: '#',

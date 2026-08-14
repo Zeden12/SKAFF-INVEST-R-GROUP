@@ -84,8 +84,8 @@ const companies = [
     borderColor: 'border-pink-100'
   },
   { 
-    name: 'SKAFF LUXIZORA', 
-    tagline: 'Collection and fashion House',
+    name: 'SKAFF LUXORA', 
+    tagline: 'Correction and Fashion House',
     logo: BrandNewLogo,
     website: 'https://www.instagram.com/skaff_brand_new?igsh=aTZmcWMxZDk0ajU0',
     bgColor: 'bg-indigo-50',
@@ -115,7 +115,7 @@ const companies = [
     borderColor: 'border-orange-100'
   },
   {
-    name: 'AgriHub',
+    name: 'SKAFF AGRI HUB',
     tagline: 'Agriculture & Agribusiness',
     logo: AgriHubLogo,
     website: '#',
@@ -123,7 +123,7 @@ const companies = [
     borderColor: 'border-green-100'
   },
   {
-    name: 'Medical Health',
+    name: 'SKAFF MEDICAL HEALTH',
     tagline: 'Healthcare Services',
     logo: MedicalHealthLogo,
     website: '#',

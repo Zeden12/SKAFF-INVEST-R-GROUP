@@ -41,7 +41,7 @@ const services = [
   { 
     icon: <FaChartLine className="text-indigo-500" size={24} />, 
     title: 'Brand Strategy', 
-    desc: 'Comprehensive market positioning and growth strategies developed by SKAFF LUXIZORA.',
+    desc: 'Comprehensive market positioning and growth strategies developed by SKAFF LUXORA',
     benefits: ['Competitive analysis', 'Audience targeting', 'Performance metrics']
   },
   { 
@@ -77,13 +77,13 @@ const services = [
   {
     icon: <FaLeaf className="text-green-500" size={24} />,
     title: 'Agriculture & Agribusiness',
-    desc: 'Sustainable farming solutions, agro-processing, and market linkages delivered through AgriHub.',
+    desc: 'Sustainable farming solutions, agro-processing, and market linkages delivered through SKAFF AGRI HUB.',
     benefits: ['Farm input supply', 'Agro-processing', 'Farmer training', 'Market access']
   },
   {
     icon: <FaHeartbeat className="text-rose-500" size={24} />,
     title: 'Healthcare Services',
-    desc: 'Quality medical care and wellness programs improving community health through Medical Health.',
+    desc: 'Quality medical care and wellness programs improving community health through SKAFF MEDICAL HEALTH'.
     benefits: ['Medical consultations', 'Diagnostics & labs', 'Wellness programs', 'Medical supplies']
   },
   {
