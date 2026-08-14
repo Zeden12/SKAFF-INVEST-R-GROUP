@@ -52,8 +52,8 @@ const OurCompanies = () => {
       logo: MarketPlaceLogo
     },
     { 
-      name: 'SKAFF LUXIZORA', 
-      description: 'Brand Development',
+      name: 'SKAFF LUXORA', 
+      description: 'Correction and Fashion House',
       logo: BrandNewLogo
     },
     { 
@@ -82,12 +82,12 @@ const OurCompanies = () => {
       logo: SkaffSportLogo
     },
     {
-      name: 'AgriHub',
+      name: 'SKAFF AGRI HUB',
       description: 'Agriculture & Agribusiness',
       logo: AgriHubLogo
     },
     {
-      name: 'Medical Health',
+      name: 'SKAFF MEDICAL HEALTH',
       description: 'Healthcare Services',
       logo: MedicalHealthLogo
     },
