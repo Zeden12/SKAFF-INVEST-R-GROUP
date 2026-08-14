@@ -272,18 +272,20 @@ const CompaniesPage = () => {
                 </div>
                 <p className="text-gray-700 mb-4">{company.description}</p>
                 
-                <div className="grid grid-cols-3 gap-2 mb-4">
-                  {Object.entries(company.stats).map(([key, value]) => (
-                    <motion.div 
-                      key={key}
-                      whileHover={{ y: -3 }}
-                      className="bg-white bg-opacity-70 p-2 rounded-lg text-center shadow-sm"
-                    >
-                      <p className="font-bold text-gray-900">{value}</p>
-                      <p className="text-xs text-gray-600 capitalize">{key}</p>
-                    </motion.div>
-                  ))}
-                </div>
+                {company.stats && Object.keys(company.stats).length > 0 && (
+                  <div className="grid grid-cols-3 gap-2 mb-4">
+                    {Object.entries(company.stats).map(([key, value]) => (
+                      <motion.div 
+                        key={key}
+                        whileHover={{ y: -3 }}
+                        className="bg-white bg-opacity-70 p-2 rounded-lg text-center shadow-sm"
+                      >
+                        <p className="font-bold text-gray-900">{value}</p>
+                        <p className="text-xs text-gray-600 capitalize">{key}</p>
+                      </motion.div>
+                    ))}
+                  </div>
+                )}
 
                 <motion.button
                   whileHover={{ scale: 1.02 }}
