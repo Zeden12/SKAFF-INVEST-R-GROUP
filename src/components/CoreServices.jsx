@@ -83,7 +83,7 @@ const services = [
   {
     icon: <FaHeartbeat className="text-rose-500" size={24} />,
     title: 'Healthcare Services',
-    desc: 'Quality medical care and wellness programs improving community health through SKAFF MEDICAL HEALTH'.
+    desc: 'Quality medical care and wellness programs improving community health through SKAFF MEDICAL HEALTH.',
     benefits: ['Medical consultations', 'Diagnostics & labs', 'Wellness programs', 'Medical supplies']
   },
   {
