@@ -4,75 +4,75 @@ import { FaCode, FaBuilding, FaCamera, FaIndustry, FaPalette, FaShoppingCart, Fa
 const services = [
   { 
     icon: <FaCode className="text-blue-500" size={24} />, 
-    title: 'Technology Solutions', 
-    desc: 'End-to-end digital transformation services including custom software development, cloud solutions, and AI integration through SKAFF DEVNEX.',
-    benefits: ['Scalable systems', 'Future-proof tech', '24/7 support']
+    title: 'Technology & Digital Innovation', 
+    desc: 'Modern software, digital platforms and IT solutions helping businesses improve efficiency, connectivity and growth through SKAFF DEVNEX.',
+    benefits: ['Software Development', 'Cloud Solutions', 'IT Consulting', 'Digital Transformation']
   },
   { 
     icon: <FaBuilding className="text-green-500" size={24} />, 
-    title: 'Architecture & Engineering', 
-    desc: 'Comprehensive design and structural engineering solutions from concept to completion with SKAFF ARCHITECTURE.',
-    benefits: ['Innovative designs', 'Sustainable solutions', 'Precision engineering']
+    title: 'Architecture & Construction Consultancy', 
+    desc: 'Innovative, functional and sustainable solutions for residential, commercial and institutional developments with SKAFF ARCHITECTURE.',
+    benefits: ['Architectural Design', 'Engineering Consultancy', 'Sustainable Solutions', 'Project Management']
   },
   { 
     icon: <FaCamera className="text-purple-500" size={24} />, 
-    title: 'Media Production', 
-    desc: 'Full-service content creation including 4K videography, professional photography, and digital media through SKAFF CAPTURE.',
-    benefits: ['Studio quality', 'Creative storytelling', 'Multi-platform content']
+    title: 'Creative Production', 
+    desc: 'Professional photography, cinematography and visual storytelling for businesses, brands and creative projects through SKAFF CAPTURE.',
+    benefits: ['Professional Photography', 'Cinematography', 'Visual Storytelling', 'Creative Consultation']
   },
   { 
     icon: <FaPalette className="text-pink-500" size={24} />, 
     title: 'Design & Branding', 
     desc: 'Strategic visual identity development and graphic design solutions crafted by SKAFF CORE GRAPHIX.',
-    benefits: ['Brand consistency', 'Market research', 'Visual storytelling']
+    benefits: ['Corporate Identity', 'Branding Strategy', 'Creative Design', 'Visual Communication']
   },
   { 
     icon: <FaShoppingCart className="text-red-500" size={24} />, 
-    title: 'E-Commerce Solutions', 
-    desc: 'Complete online marketplace development and retail optimization via Skaff Market Place.',
-    benefits: ['Conversion optimization', 'Secure payments', 'Omnichannel integration']
+    title: 'E-Commerce & Digital Commerce', 
+    desc: 'Online marketplace solutions connecting businesses, entrepreneurs and consumers through secure digital platforms via SKAFF MARKET PLACE.',
+    benefits: ['Online Marketplaces', 'Digital Payment Integration', 'Secure Platforms', 'Commerce Solutions']
   },
   { 
     icon: <FaGraduationCap className="text-teal-500" size={24} />, 
-    title: 'Education Programs', 
-    desc: 'Cutting-edge vocational training and skill development initiatives under SKAFF Academy.',
-    benefits: ['Industry-aligned curriculum', 'Expert instructors', 'Practical training']
+    title: 'Education & Professional Development', 
+    desc: 'Practical knowledge, technical expertise, leadership and entrepreneurship training for students and professionals through SKAFF Academy.',
+    benefits: ['Professional Certification', 'Executive Education', 'Technical Training', 'Entrepreneurship Programs']
   },
   { 
     icon: <FaChartLine className="text-indigo-500" size={24} />, 
-    title: 'Brand Strategy', 
-    desc: 'Comprehensive market positioning and growth strategies developed by SKAFF LUXORA',
-    benefits: ['Competitive analysis', 'Audience targeting', 'Performance metrics']
+    title: 'Luxury Fashion & Lifestyle', 
+    desc: 'Premium products and experiences combining contemporary design, quality craftsmanship and modern African elegance through SKAFF LUXORA.',
+    benefits: ['Luxury Fashion', 'Premium Accessories', 'Designer Collaborations', 'Lifestyle Products']
   },
   { 
     icon: <FaMusic className="text-yellow-500" size={24} />, 
-    title: 'Audio Production', 
-    desc: 'Professional recording, mixing, and artist development services through SKAFF GLOBAL MUSIC.',
-    benefits: ['State-of-the-art studios', 'Talent scouting', 'Distribution networks']
+    title: 'Music & Entertainment', 
+    desc: 'Artist development from talent discovery to publishing, distribution and career management through SKAFF GLOBAL MUSIC.',
+    benefits: ['Artist Development', 'Music Production', 'Digital Distribution', 'Business Management']
   },
   { 
     icon: <FaIndustry className="text-orange-500" size={24} />, 
-    title: 'Industrial Innovation', 
-    desc: 'Advanced manufacturing and industrial automation solutions from Skaff Industry.',
-    benefits: ['Process optimization', 'Quality control', 'Supply chain integration']
+    title: 'Manufacturing & Industrial Development', 
+    desc: 'Modern manufacturing, processing, engineering and technology-driven industrial solutions from SKAFF INDUSTRY.',
+    benefits: ['Manufacturing Operations', 'Industrial Processing', 'Product Development', 'Quality Management']
   },
   { 
     icon: <FaFilm className="text-amber-500" size={24} />, 
-    title: 'Film Production', 
-    desc: 'Feature film and commercial production services including post-production at SKAFF FILMS.',
-    benefits: ['Award-winning crews', '4K/8K capabilities', 'Global distribution']
+    title: 'Film & Creative Entertainment', 
+    desc: 'Visual storytelling through feature films, television, documentaries and digital content from SKAFF FILMS.',
+    benefits: ['Feature Film Production', 'Television', 'Documentaries', 'Digital Productions']
   },
   { 
     icon: <FaCode className="text-blue-500" size={24} />, 
-    title: 'Broadcasting Solutions',
-    desc: 'Comprehensive media broadcasting and streaming services through SKAFF BROADCASTING AGENCY.', 
-    benefits: ['Advertisement','Live streaming', 'Content syndication', 'Multi-platform reach']
+    title: 'Media & Broadcasting',
+    desc: 'Television, digital media and creative communication platforms that inform, educate and entertain through SKAFF BROADCASTING AGENCY.', 
+    benefits: ['Television Broadcasting', 'Digital Media', 'Journalism', 'Content Production']
   },
   { 
     icon: <FaBuilding className="text-green-500" size={24} />, 
-    title: 'Empowering sports',
-    desc: 'Comprehensive sports management and event organization services.',
-    benefits: ['Event management', 'Athlete representation', 'Sponsorship acquisition']
+    title: 'Sports Development & Management',
+    desc: 'Athletic excellence, talent development and professional sports organizations through SKAFF SPORTS CLUBS.',
+    benefits: ['Professional Sports Clubs', 'Sports Academies', 'Athlete Management', 'Talent Development']
   },
   {
     icon: <FaLeaf className="text-green-500" size={24} />,
@@ -82,15 +82,15 @@ const services = [
   },
   {
     icon: <FaHeartbeat className="text-rose-500" size={24} />,
-    title: 'Healthcare Services',
-    desc: 'Quality medical care and wellness programs improving community health through SKAFF MEDICAL HEALTH.',
-    benefits: ['Medical consultations', 'Diagnostics & labs', 'Wellness programs', 'Medical supplies']
+    title: 'Healthcare & Medical Services',
+    desc: 'Accessible, reliable patient-centered healthcare through medical services, pharmaceutical care and digital innovation from SKAFF MEDICAL HEALTH.',
+    benefits: ['Medical Services', 'Diagnostic Solutions', 'Preventive Healthcare', 'Digital Health']
   },
   {
     icon: <FaMoneyBillWave className="text-emerald-500" size={24} />,
-    title: 'Financial Technology',
-    desc: 'Digital payments, money transfer, and banking solutions powered by Skaff MoneyHost.',
-    benefits: ['Digital payments', 'Money transfer', 'Mobile banking', 'Financial advisory']
+    title: 'Financial Technology & Digital Banking',
+    desc: 'Secure digital financial solutions improving accessibility and inclusion through SKAFF MONEY HOST. Services are being developed and subject to regulatory requirements.',
+    benefits: ['Digital Banking', 'Payment Solutions', 'Financial Management', 'Cross-Border Solutions']
   },
 ];
 

@@ -21,171 +21,111 @@ import MoneyHostLogo from '../assets/skaffmoneyhost.jpeg';
 const companies = [
   { 
     name: 'SKAFF DEVNEX', 
-    tagline: 'Technology Solutions',
+    tagline: 'Technology & Digital Innovation',
     logo: DevnexLogo,
     website: 'https://devnexhitech.vercel.app/',
     bgColor: 'bg-blue-50',
-    description: 'Cutting-edge software development, SaaS solutions, and IT infrastructure services for businesses of all sizes.',
-    stats: {
-      clients: '10+',
-      projects: '20+',
-      years: '3'
-    },
-    services: ['Custom Software', 'Cloud Solutions', 'SaaS Solutions', 'Cybersecurity', 'AI Integration', 'IT Consulting', 'Support Services']
+    description: 'Technology and digital innovation company developing modern software, digital platforms and IT solutions that help businesses and organizations improve efficiency, connectivity and growth.',
+    services: ['Software Development', 'Web & Mobile Solutions', 'IT Consulting', 'Digital Transformation', 'Cloud & Digital Infrastructure', 'Cybersecurity Solutions', 'Automation & Smart Solutions', 'Technical Support Services']
   },
   { 
     name: 'SKAFF Academy', 
-    tagline: 'Education Programs',
+    tagline: 'Education & Professional Development',
     logo: SIELogo,
     website: 'https://sie-programme.vercel.app/',
     bgColor: 'bg-teal-50',
-    description: 'Innovative educational programs and vocational training for skills development and career advancement.',
-    stats: {
-      students: '50,000+',
-      courses: '120+',
-      partners: '200+'
-    },
-    services: ['Vocational Training', 'Online Courses', 'Corporate Workshops', 'Career Counseling']
+    description: 'Education and professional development institution focused on practical knowledge, technical expertise, leadership, entrepreneurship and future-ready skills for students, professionals, entrepreneurs and organizations.',
+    services: ['Professional Certification Programs', 'Executive Education', 'Technical & Vocational Training', 'Digital Learning', 'Entrepreneurship Development', 'Research & Innovation', 'Corporate Training Solutions']
   },
   { 
     name: 'SKAFF GLOBAL MUSIC', 
-    tagline: 'Music Production',
+    tagline: 'Music & Entertainment',
     logo: RosMusicLogo,
     website: 'https://www.instagram.com/ros_music__?igsh=OGhldnFvY2NqY20x',
     bgColor: 'bg-yellow-50',
-    description: 'Full-service music production company specializing in recording, publishing, and artist development.',
-    stats: {
-      artists: '300+',
-      albums: '500+',
-      awards: '40+'
-    },
-    services: ['Recording Studio', 'Music Publishing', 'Artist Management', 'Event Production']
+    description: 'Integrated music entertainment company supporting artists throughout their professional journey, from talent discovery and music production to publishing, distribution, branding and long-term career development.',
+    services: ['Artist Development', 'Music Production', 'Music Publishing', 'Digital Distribution', 'Artist Branding', 'Entertainment Marketing', 'Business Management']
   },
   { 
     name: 'SKAFF CAPTURE', 
-    tagline: 'Video and Photography',
+    tagline: 'Creative Production',
     logo: InzoomLogo,
     website: 'https://www.instagram.com/inzoom_capture?igsh=Mm52M2prbzgwYm1l',
     bgColor: 'bg-purple-50',
-    description: 'Professional media production services for commercials, documentaries, and corporate content.',
-    stats: {
-      projects: '900+',
-      clients: '300+',
-      hours: '10,000+'
-    },
-    services: ['Video Production', 'Photography', 'Post-Production', 'Live Streaming']
+    description: 'Creative production company specializing in professional photography, cinematography and visual storytelling for businesses, brands, individuals and creative projects.',
+    services: ['Professional Photography', 'Cinematography', 'Visual Storytelling', 'Commercial Production', 'Documentary Production', 'Post-Production Services', 'Creative Consultation']
   },
   { 
     name: 'SKAFF BROADCASTING AGENCY', 
-    tagline: 'Broadcasting Agency and Media',
+    tagline: 'Media & Broadcasting',
     logo: SkaffTvLogo,
     website: 'https://youtube.com/@skafftvrda?si=xxG2Z85N7ei8JQP4',
     bgColor: 'bg-orange-50',
-    description: 'Leading media broadcasting network delivering news, entertainment, and educational content.',
-    stats: {
-      channels: '5',
-      viewers: '20M+',
-      programs: '100+'
-    },
-    services: ['TV Production', 'Content Distribution', 'Media Buying', 'Broadcast Solutions']
+    description: 'Media and broadcasting company developing television, digital media, journalism and creative communication platforms that inform, educate, entertain and connect audiences.',
+    services: ['Television Broadcasting', 'Digital Media Production', 'Journalism & Storytelling', 'Content Production', 'Brand Media Solutions', 'Entertainment Networks', 'Event Coverage']
   },
   { 
-    name: 'Skaff Market Place', 
-    tagline: 'E-Commerce Platform',
+    name: 'SKAFF MARKET PLACE', 
+    tagline: 'E-Commerce & Digital Commerce',
     logo: MarketPlaceLogo,
     website: 'https://skaffmarket.com',
     bgColor: 'bg-red-50',
-    description: 'Comprehensive e-commerce solutions with integrated logistics and payment systems for seamless online shopping.',
-    stats: {
-      merchants: '1,000+',
-      products: '100,000+',
-      users: '1M+'
-    },
-    services: ['Online Storefronts', 'Buy Products & Services', 'Sell your Products & Services', 'Payment Processing', 'Inventory Management', 'Marketplace Solutions']
+    description: 'Digital commerce company developing online marketplace solutions that connect businesses, entrepreneurs, service providers and consumers through secure and accessible digital platforms.',
+    services: ['Online Marketplace Solutions', 'Merchant Marketplace Participation', 'Digital Commerce Infrastructure', 'Enterprise Commerce Solutions', 'Digital Payment Integration', 'Logistics & Supply Chain Integration', 'Technology-Driven Commerce Solutions']
   },
   { 
-    name: 'Skaff Industry', 
-    tagline: 'Industrial Solutions',
+    name: 'SKAFF INDUSTRY', 
+    tagline: 'Manufacturing & Industrial Development',
     logo: SkaffIndustryLogo,
     website: 'https://www.instagram.com/skaff__industry/profilecard/?igsh=c3ZjMjNoNW40Mjc4',
     bgColor: 'bg-orange-50',
-    description: 'Comprehensive industrial services including manufacturing, logistics, and equipment solutions.',
-    stats: {
-      facilities: '8',
-      clients: '250+',
-      countries: '5'
-    },
-    services: ['Manufacturing', 'Industrial Automation', 'Equipment Supply', 'Maintenance Services']
+    description: 'Industrial and manufacturing company focused on developing productive capacity through modern manufacturing, processing, engineering, product innovation and technology-driven industrial solutions.',
+    services: ['Manufacturing Operations', 'Industrial Processing', 'Product Development', 'Engineering Support', 'Industrial Automation', 'Quality Management', 'Supply Chain Support']
   },
   { 
     name: 'SKAFF LUXORA', 
-    tagline: 'Correction and Fashion House',
+    tagline: 'Luxury Fashion & Lifestyle',
     logo: BrandNewLogo,
     website: 'https://www.instagram.com/skaff_brand_new?igsh=aTZmcWMxZDk0ajU0',
     bgColor: 'bg-indigo-50',
-    description: 'Trendsetting fashion brand offering premium apparel and accessories for modern consumers.',
-    stats: {
-      collections: '15+',
-      stores: '25',
-      countries: '8'
-    },
-    services: ['Apparel Design', 'Retail Solutions', 'Brand Licensing', 'Fashion Consulting']
+    description: 'Luxury fashion and lifestyle brand developing premium products and experiences that combine contemporary design, quality craftsmanship, creativity, innovation and modern African elegance.',
+    services: ['Luxury Fashion Collections', 'Footwear', 'Accessories', 'Lifestyle Products', 'Designer Collaborations', 'Limited-Edition Collections', 'Premium Retail Experiences']
   },
   { 
     name: 'SKAFF CORE GRAPHIX', 
-    tagline: 'Design & Branding',
+    tagline: 'Branding & Design',
     logo: BlueprintLogo,
-    website: 'https://www.instagram.com/blueprintgraphixtechnology?igsh=aGZ2NHZkM3J0OXBp ',
+    website: 'https://www.instagram.com/blueprintgraphixtechnology?igsh=aGZ2NHZkM3J0OXBp',
     bgColor: 'bg-pink-50',
-    description: 'Full-service creative agency specializing in brand identity, digital design, and marketing collateral.',
-    stats: {
-      brands: '800+',
-      campaigns: '100+',
-      awards: '5'
-    },
-    services: ['Logo Design','Banner Design', 'Brand Strategy', 'Print Media', 'Digital Advertising Boards', 'Social Media Graphics']
+    description: 'Creative branding and design company helping organizations build strong identities and communicate effectively through strategic branding, professional design and innovative visual communication.',
+    services: ['Corporate Identity', 'Branding Strategy', 'Creative Design', 'Visual Identity Systems', 'Communication Materials', 'Brand Communication', 'Logo Design', 'Visual Communication']
   },
   { 
     name: 'SKAFF ARCHITECTURE', 
-    tagline: 'Architectural Design and Construction',
+    tagline: 'Architecture & Construction Consultancy',
     logo: SkaffArchLogo,
     website: 'https://www.instagram.com/skaff_arch_construct?igsh=YXh4a2swY2UyeGwx',
     bgColor: 'bg-green-50',
-    description: 'Award-winning architectural firm specializing in sustainable and innovative building designs.',
-    stats: {
-      projects: '400+',
-      countries: '12',
-      awards: '18'
-    },
-    services: ['Architectural Design', 'Interior Design', 'Urban Planning', 'Project Management']
+    description: 'Architecture and construction consultancy delivering innovative, functional and sustainable solutions for residential, commercial, institutional and mixed-use developments through design, engineering and strategic project planning.',
+    services: ['Architectural Design', 'Engineering Consultancy', 'Construction Consultancy', 'Interior Design', 'Urban Planning', 'Project Management']
   },
   { 
     name: 'SKAFF FILMS', 
-    tagline: 'Film Production',
+    tagline: 'Film & Creative Entertainment',
     logo: SavanaLogo,
     website: 'https://www.instagram.com/savana_film?igsh=MXNhbGdhMXZpa2poNA==',
     bgColor: 'bg-amber-50',
-    description: 'Feature film and television production company creating compelling content for global audiences.',
-    stats: {
-      films: '30+',
-      awards: '15',
-      platforms: '10+'
-    },
-    services: ['Film Production', 'Script Development', 'Distribution', 'Film Financing']
+    description: 'Film production and creative entertainment company developing visual storytelling through feature films, television, documentaries, digital content and cinematic productions for local, regional and international audiences.',
+    services: ['Feature Film Production', 'Television Productions', 'Documentaries', 'Animation', 'Digital Productions', 'Commercial Content', 'International Co-Productions', 'Corporate/Branded Visual Productions']
   },
   { 
-    name: 'Skaff Sports Club', 
-    tagline: 'Sports and Recreation',
+    name: 'SKAFF SPORTS CLUBS', 
+    tagline: 'Sports Development & Management',
     logo: SkaffSportLogo,
     website: 'https://skaffsports.com',
     bgColor: 'bg-orange-50',
-    description: 'Premier sports management and facilities offering training programs and professional development.',
-    stats: {
-      athletes: '200+',
-      facilities: '10',
-      events: '50+'
-    },
-    services: ['Athlete Management', 'Sports Facilities', 'Event Organization', 'Talent Development']
+    description: 'Sports development and management organization focused on athletic excellence, emerging talent, professional sports organizations, sports education, events and sustainable sports development.',
+    services: ['Professional Sports Clubs', 'Sports Academies', 'Talent Identification & Development', 'Athlete Management', 'Sports Events & Competitions', 'Sports Business & Marketing']
   },
   {
     name: 'SKAFF AGRI HUB',
@@ -193,41 +133,26 @@ const companies = [
     logo: AgriHubLogo,
     website: '#',
     bgColor: 'bg-green-50',
-    description: 'Modern agribusiness solutions spanning farm inputs, agro-processing, and market linkages for sustainable agriculture.',
-    stats: {
-      farmers: '500+',
-      hectares: '200+',
-      products: '50+'
-    },
-    services: ['Farm Input Supply', 'Agro-Processing', 'Training & Extension', 'Market Linkages']
+    description: 'Agriculture and agribusiness company advancing modern agriculture through sustainable farming, agribusiness development, agricultural technology, food value chains and responsible resource management.',
+    services: ['Integrated Farming Systems', 'Crop Production', 'Livestock Development', 'Research & Innovation', 'Food Processing & Value Addition', 'Food Value Chains', 'Agricultural Technology/AgriTech', 'Smart & Precision Farming', 'Storage & Logistics', 'Market Access', 'Climate-Smart Agriculture']
   },
   {
     name: 'SKAFF MEDICAL HEALTH',
-    tagline: 'Healthcare Services',
+    tagline: 'Healthcare & Medical Services',
     logo: MedicalHealthLogo,
     website: '#',
     bgColor: 'bg-rose-50',
-    description: 'Quality healthcare services and medical solutions designed to improve community well-being and expand access to care.',
-    stats: {
-      patients: '5,000+',
-      facilities: '5',
-      services: '20+'
-    },
-    services: ['Medical Consultations', 'Diagnostics & Labs', 'Wellness Programs', 'Medical Supplies']
+    description: 'Healthcare and medical services company focused on accessible, reliable and patient-centered healthcare through medical services, pharmaceutical care, preventive healthcare, digital health innovation and community wellness.',
+    services: ['Medical/Clinical Services', 'Pharmaceutical Services', 'Diagnostic Solutions', 'Preventive Healthcare', 'Digital Health & Innovation', 'Telemedicine', 'Community Health Programs']
   },
   {
-    name: 'Skaff MoneyHost',
-    tagline: 'Financial Technology',
+    name: 'SKAFF MONEY HOST',
+    tagline: 'Financial Technology & Digital Banking',
     logo: MoneyHostLogo,
     website: '#',
     bgColor: 'bg-emerald-50',
-    description: 'Digital financial services platform enabling seamless payments, money transfers, and accessible banking solutions.',
-    stats: {
-      transactions: '100K+',
-      users: '10,000+',
-      partners: '50+'
-    },
-    services: ['Digital Payments', 'Money Transfer', 'Mobile Banking', 'Financial Advisory']
+    description: 'Financial technology company developing secure and intelligent digital financial solutions designed to improve accessibility, efficiency and inclusion for individuals, businesses and institutions. Services are being developed and subject to applicable regulatory requirements.',
+    services: ['Digital Banking', 'Digital Wallets', 'Payment Infrastructure', 'Business Banking Solutions', 'Investment Technology', 'Lending Technologies', 'Financial Management Solutions', 'Cross-Border Financial Solutions']
   }
 ];
 

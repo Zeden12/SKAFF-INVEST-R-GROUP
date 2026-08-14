@@ -23,17 +23,17 @@ const OurCompanies = () => {
   const companies = [
     { 
       name: 'SKAFF DEVNEX', 
-      description: 'Technology Solutions',
+      description: 'Technology & Digital Innovation',
       logo: DevnexLogo
     },
     { 
       name: 'SKAFF CAPTURE', 
-      description: 'Media Production',
+      description: 'Creative Production',
       logo: InzoomLogo
     },
     { 
-      name: 'Skaff Industry', 
-      description: 'Industrial Solutions',
+      name: 'SKAFF INDUSTRY', 
+      description: 'Manufacturing & Industrial Development',
       logo: SkaffIndustryLogo
     },
     { 
@@ -41,44 +41,44 @@ const OurCompanies = () => {
       description: 'Design & Branding',
       logo: BlueprintLogo
     },
-    {
+    { 
       name: 'SKAFF ARCHITECTURE', 
-      description: 'Architectural Design',
+      description: 'Architecture & Construction Consultancy',
       logo: SkaffArchLogo
     },
     { 
-      name: 'Skaff Market Place', 
-      description: 'E-Commerce Platform',
+      name: 'SKAFF MARKET PLACE', 
+      description: 'E-Commerce & Digital Commerce',
       logo: MarketPlaceLogo
     },
     { 
       name: 'SKAFF LUXORA', 
-      description: 'Correction and Fashion House',
+      description: 'Luxury Fashion & Lifestyle',
       logo: BrandNewLogo
     },
     { 
       name: 'SKAFF GLOBAL MUSIC', 
-      description: 'Music Production',
+      description: 'Music & Entertainment',
       logo: RosMusicLogo
     },
     { 
       name: 'SKAFF Academy', 
-      description: 'Education Programs',
+      description: 'Education & Professional Development',
       logo: SIELogo
     },
     { 
       name: 'SKAFF FILMS', 
-      description: 'Film Production',
+      description: 'Film & Creative Entertainment',
       logo: SavanaLogo
     },
     { 
       name: 'SKAFF BROADCASTING AGENCY', 
-      description: 'Broadcasting & Media',
+      description: 'Media & Broadcasting',
       logo: SkaffTvLogo
     },
     { 
-      name: 'Skaff Sports Club', 
-      description: 'Sports & Entertainment',
+      name: 'SKAFF SPORTS CLUBS', 
+      description: 'Sports Development & Management',
       logo: SkaffSportLogo
     },
     {
@@ -88,12 +88,12 @@ const OurCompanies = () => {
     },
     {
       name: 'SKAFF MEDICAL HEALTH',
-      description: 'Healthcare Services',
+      description: 'Healthcare & Medical Services',
       logo: MedicalHealthLogo
     },
     {
-      name: 'Skaff MoneyHost',
-      description: 'Financial Technology',
+      name: 'SKAFF MONEY HOST',
+      description: 'Financial Technology & Digital Banking',
       logo: MoneyHostLogo
     }
   ];
