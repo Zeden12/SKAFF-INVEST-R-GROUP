@@ -32,111 +32,111 @@ const companies = [
     tagline: 'Education & Professional Development',
     logo: SIELogo,
     website: 'https://sie-programme.vercel.app/',
-    bgColor: 'bg-teal-50',
-    borderColor: 'border-teal-100'
+    bgColor: 'bg-indigo-50',
+    borderColor: 'border-indigo-100'
   },
   { 
     name: 'SKAFF GLOBAL MUSIC', 
     tagline: 'Music & Entertainment',
     logo: RosMusicLogo,
     website: 'https://www.instagram.com/ros_music__?igsh=OGhldnFvY2NqY20x',
-    bgColor: 'bg-yellow-50',
-    borderColor: 'border-yellow-100'
+    bgColor: 'bg-blue-50',
+    borderColor: 'border-blue-100'
   },
   { 
     name: 'SKAFF INDUSTRY', 
     tagline: 'Manufacturing & Industrial Development',
     logo: SkaffIndustryLogo,
     website: 'https://www.instagram.com/skaff__industry/profilecard/?igsh=c3ZjMjNoNW40Mjc4',
-    bgColor: 'bg-orange-50',
-    borderColor: 'border-orange-100'
+    bgColor: 'bg-indigo-50',
+    borderColor: 'border-indigo-100'
   },
   { 
     name: 'SKAFF MARKET PLACE', 
     tagline: 'E-Commerce & Digital Commerce',
     logo: MarketPlaceLogo,
     website: 'https://skaffmarket.com',
-    bgColor: 'bg-red-50',
-    borderColor: 'border-red-100'
+    bgColor: 'bg-blue-50',
+    borderColor: 'border-blue-100'
   },
   { 
     name: 'SKAFF BROADCASTING AGENCY', 
     tagline: 'Media & Broadcasting',
     logo: SkaffTvLogo,
     website: 'https://youtube.com/@skafftvrda?si=xxG2Z85N7ei8JQP4',
-    bgColor: 'bg-orange-50',
-    borderColor: 'border-orange-100'
+    bgColor: 'bg-indigo-50',
+    borderColor: 'border-indigo-100'
   },
   { 
     name: 'SKAFF CAPTURE', 
     tagline: 'Creative Production',
     logo: InzoomLogo,
     website: 'https://www.instagram.com/inzoom_capture?igsh=Mm52M2prbzgwYm1l',
-    bgColor: 'bg-purple-50',
-    borderColor: 'border-purple-100'
+    bgColor: 'bg-blue-50',
+    borderColor: 'border-blue-100'
   },
   { 
     name: 'SKAFF CORE GRAPHIX', 
     tagline: 'Design & Branding',
     logo: BlueprintLogo,
     website: 'https://www.instagram.com/blueprintgraphixtechnology?igsh=aGZ2NHZkM3J0OXBp',
-    bgColor: 'bg-pink-50',
-    borderColor: 'border-pink-100'
+    bgColor: 'bg-indigo-50',
+    borderColor: 'border-indigo-100'
   },
   { 
     name: 'SKAFF LUXORA', 
     tagline: 'Luxury Fashion & Lifestyle',
     logo: BrandNewLogo,
     website: 'https://www.instagram.com/skaff_brand_new?igsh=aTZmcWMxZDk0ajU0',
-    bgColor: 'bg-indigo-50',
-    borderColor: 'border-indigo-100'
+    bgColor: 'bg-blue-50',
+    borderColor: 'border-blue-100'
   },
   { 
     name: 'SKAFF ARCHITECTURE', 
     tagline: 'Architecture & Construction Consultancy',
     logo: SkaffArchLogo,
     website: 'https://www.instagram.com/skaff_arch_construct?igsh=YXh4a2swY2UyeGwx',
-    bgColor: 'bg-green-50',
-    borderColor: 'border-green-100'
+    bgColor: 'bg-indigo-50',
+    borderColor: 'border-indigo-100'
   },
   { 
     name: 'SKAFF FILMS', 
     tagline: 'Film & Creative Entertainment',
     logo: SavanaLogo,
     website: 'https://www.instagram.com/savana_film?igsh=MXNhbGdhMXZpa2poNA==',
-    bgColor: 'bg-amber-50',
-    borderColor: 'border-amber-100'
+    bgColor: 'bg-blue-50',
+    borderColor: 'border-blue-100'
   },  {
     name: 'SKAFF SPORTS CLUBS',
     tagline: 'Sports Development & Management',
     logo: SkaffSportLogo,
     website: 'https://skaffsports.com',
-    bgColor: 'bg-orange-50',
-    borderColor: 'border-orange-100'
+    bgColor: 'bg-indigo-50',
+    borderColor: 'border-indigo-100'
   },
   {
     name: 'SKAFF AGRI HUB',
     tagline: 'Agriculture & Agribusiness',
     logo: AgriHubLogo,
     website: '#',
-    bgColor: 'bg-green-50',
-    borderColor: 'border-green-100'
+    bgColor: 'bg-blue-50',
+    borderColor: 'border-blue-100'
   },
   {
     name: 'SKAFF MEDICAL HEALTH',
     tagline: 'Healthcare & Medical Services',
     logo: MedicalHealthLogo,
     website: '#',
-    bgColor: 'bg-rose-50',
-    borderColor: 'border-rose-100'
+    bgColor: 'bg-indigo-50',
+    borderColor: 'border-indigo-100'
   },
   {
     name: 'SKAFF MONEY HOST',
     tagline: 'Financial Technology & Digital Banking',
     logo: MoneyHostLogo,
     website: '#',
-    bgColor: 'bg-emerald-50',
-    borderColor: 'border-emerald-100'
+    bgColor: 'bg-blue-50',
+    borderColor: 'border-blue-100'
   }
 ];
 

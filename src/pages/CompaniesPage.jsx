@@ -33,7 +33,7 @@ const companies = [
     tagline: 'Education & Professional Development',
     logo: SIELogo,
     website: 'https://sie-programme.vercel.app/',
-    bgColor: 'bg-teal-50',
+    bgColor: 'bg-indigo-50',
     description: 'Education and professional development institution focused on practical knowledge, technical expertise, leadership, entrepreneurship and future-ready skills for students, professionals, entrepreneurs and organizations.',
     services: ['Professional Certification Programs', 'Executive Education', 'Technical & Vocational Training', 'Digital Learning', 'Entrepreneurship Development', 'Research & Innovation', 'Corporate Training Solutions']
   },
@@ -42,7 +42,7 @@ const companies = [
     tagline: 'Music & Entertainment',
     logo: RosMusicLogo,
     website: 'https://www.instagram.com/ros_music__?igsh=OGhldnFvY2NqY20x',
-    bgColor: 'bg-yellow-50',
+    bgColor: 'bg-blue-50',
     description: 'Integrated music entertainment company supporting artists throughout their professional journey, from talent discovery and music production to publishing, distribution, branding and long-term career development.',
     services: ['Artist Development', 'Music Production', 'Music Publishing', 'Digital Distribution', 'Artist Branding', 'Entertainment Marketing', 'Business Management']
   },
@@ -51,7 +51,7 @@ const companies = [
     tagline: 'Creative Production',
     logo: InzoomLogo,
     website: 'https://www.instagram.com/inzoom_capture?igsh=Mm52M2prbzgwYm1l',
-    bgColor: 'bg-purple-50',
+    bgColor: 'bg-indigo-50',
     description: 'Creative production company specializing in professional photography, cinematography and visual storytelling for businesses, brands, individuals and creative projects.',
     services: ['Professional Photography', 'Cinematography', 'Visual Storytelling', 'Commercial Production', 'Documentary Production', 'Post-Production Services', 'Creative Consultation']
   },
@@ -60,7 +60,7 @@ const companies = [
     tagline: 'Media & Broadcasting',
     logo: SkaffTvLogo,
     website: 'https://youtube.com/@skafftvrda?si=xxG2Z85N7ei8JQP4',
-    bgColor: 'bg-orange-50',
+    bgColor: 'bg-blue-50',
     description: 'Media and broadcasting company developing television, digital media, journalism and creative communication platforms that inform, educate, entertain and connect audiences.',
     services: ['Television Broadcasting', 'Digital Media Production', 'Journalism & Storytelling', 'Content Production', 'Brand Media Solutions', 'Entertainment Networks', 'Event Coverage']
   },
@@ -69,7 +69,7 @@ const companies = [
     tagline: 'E-Commerce & Digital Commerce',
     logo: MarketPlaceLogo,
     website: 'https://skaffmarket.com',
-    bgColor: 'bg-red-50',
+    bgColor: 'bg-indigo-50',
     description: 'Digital commerce company developing online marketplace solutions that connect businesses, entrepreneurs, service providers and consumers through secure and accessible digital platforms.',
     services: ['Online Marketplace Solutions', 'Merchant Marketplace Participation', 'Digital Commerce Infrastructure', 'Enterprise Commerce Solutions', 'Digital Payment Integration', 'Logistics & Supply Chain Integration', 'Technology-Driven Commerce Solutions']
   },
@@ -78,7 +78,7 @@ const companies = [
     tagline: 'Manufacturing & Industrial Development',
     logo: SkaffIndustryLogo,
     website: 'https://www.instagram.com/skaff__industry/profilecard/?igsh=c3ZjMjNoNW40Mjc4',
-    bgColor: 'bg-orange-50',
+    bgColor: 'bg-blue-50',
     description: 'Industrial and manufacturing company focused on developing productive capacity through modern manufacturing, processing, engineering, product innovation and technology-driven industrial solutions.',
     services: ['Manufacturing Operations', 'Industrial Processing', 'Product Development', 'Engineering Support', 'Industrial Automation', 'Quality Management', 'Supply Chain Support']
   },
@@ -96,7 +96,7 @@ const companies = [
     tagline: 'Branding & Design',
     logo: BlueprintLogo,
     website: 'https://www.instagram.com/blueprintgraphixtechnology?igsh=aGZ2NHZkM3J0OXBp',
-    bgColor: 'bg-pink-50',
+    bgColor: 'bg-blue-50',
     description: 'Creative branding and design company helping organizations build strong identities and communicate effectively through strategic branding, professional design and innovative visual communication.',
     services: ['Corporate Identity', 'Branding Strategy', 'Creative Design', 'Visual Identity Systems', 'Communication Materials', 'Brand Communication', 'Logo Design', 'Visual Communication']
   },
@@ -105,7 +105,7 @@ const companies = [
     tagline: 'Architecture & Construction Consultancy',
     logo: SkaffArchLogo,
     website: 'https://www.instagram.com/skaff_arch_construct?igsh=YXh4a2swY2UyeGwx',
-    bgColor: 'bg-green-50',
+    bgColor: 'bg-indigo-50',
     description: 'Architecture and construction consultancy delivering innovative, functional and sustainable solutions for residential, commercial, institutional and mixed-use developments through design, engineering and strategic project planning.',
     services: ['Architectural Design', 'Engineering Consultancy', 'Construction Consultancy', 'Interior Design', 'Urban Planning', 'Project Management']
   },
@@ -114,7 +114,7 @@ const companies = [
     tagline: 'Film & Creative Entertainment',
     logo: SavanaLogo,
     website: 'https://www.instagram.com/savana_film?igsh=MXNhbGdhMXZpa2poNA==',
-    bgColor: 'bg-amber-50',
+    bgColor: 'bg-blue-50',
     description: 'Film production and creative entertainment company developing visual storytelling through feature films, television, documentaries, digital content and cinematic productions for local, regional and international audiences.',
     services: ['Feature Film Production', 'Television Productions', 'Documentaries', 'Animation', 'Digital Productions', 'Commercial Content', 'International Co-Productions', 'Corporate/Branded Visual Productions']
   },
@@ -123,7 +123,7 @@ const companies = [
     tagline: 'Sports Development & Management',
     logo: SkaffSportLogo,
     website: 'https://skaffsports.com',
-    bgColor: 'bg-orange-50',
+    bgColor: 'bg-indigo-50',
     description: 'Sports development and management organization focused on athletic excellence, emerging talent, professional sports organizations, sports education, events and sustainable sports development.',
     services: ['Professional Sports Clubs', 'Sports Academies', 'Talent Identification & Development', 'Athlete Management', 'Sports Events & Competitions', 'Sports Business & Marketing']
   },
@@ -132,7 +132,7 @@ const companies = [
     tagline: 'Agriculture & Agribusiness',
     logo: AgriHubLogo,
     website: '#',
-    bgColor: 'bg-green-50',
+    bgColor: 'bg-blue-50',
     description: 'Agriculture and agribusiness company advancing modern agriculture through sustainable farming, agribusiness development, agricultural technology, food value chains and responsible resource management.',
     services: ['Integrated Farming Systems', 'Crop Production', 'Livestock Development', 'Research & Innovation', 'Food Processing & Value Addition', 'Food Value Chains', 'Agricultural Technology/AgriTech', 'Smart & Precision Farming', 'Storage & Logistics', 'Market Access', 'Climate-Smart Agriculture']
   },
@@ -141,7 +141,7 @@ const companies = [
     tagline: 'Healthcare & Medical Services',
     logo: MedicalHealthLogo,
     website: '#',
-    bgColor: 'bg-rose-50',
+    bgColor: 'bg-indigo-50',
     description: 'Healthcare and medical services company focused on accessible, reliable and patient-centered healthcare through medical services, pharmaceutical care, preventive healthcare, digital health innovation and community wellness.',
     services: ['Medical/Clinical Services', 'Pharmaceutical Services', 'Diagnostic Solutions', 'Preventive Healthcare', 'Digital Health & Innovation', 'Telemedicine', 'Community Health Programs']
   },
@@ -150,7 +150,7 @@ const companies = [
     tagline: 'Financial Technology & Digital Banking',
     logo: MoneyHostLogo,
     website: '#',
-    bgColor: 'bg-emerald-50',
+    bgColor: 'bg-blue-50',
     description: 'Financial technology company developing secure and intelligent digital financial solutions designed to improve accessibility, efficiency and inclusion for individuals, businesses and institutions. Services are being developed and subject to applicable regulatory requirements.',
     services: ['Digital Banking', 'Digital Wallets', 'Payment Infrastructure', 'Business Banking Solutions', 'Investment Technology', 'Lending Technologies', 'Financial Management Solutions', 'Cross-Border Financial Solutions']
   }
