@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaExternalLinkAlt, FaChartLine, FaUsers, FaGlobeAmericas, FaHandshake } from 'react-icons/fa';
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import DevnexLogo from '../assets/skaffdevnex.jpeg';
 import SkaffArchLogo from '../assets/skaffarchitecture.jpeg';
 import InzoomLogo from '../assets/skaffcapture.jpeg';
@@ -159,8 +159,13 @@ const companies = [
 const CompaniesPage = () => {
   const [expandedCompany, setExpandedCompany] = useState(null);
 
-  const toggleExpand = (index) => {
-    setExpandedCompany(expandedCompany === index ? null : index);
+  const toggleExpand = (companyName) => {
+    // If clicking the same company, close it. Otherwise, open the new one
+    if (expandedCompany === companyName) {
+      setExpandedCompany(null);
+    } else {
+      setExpandedCompany(companyName);
+    }
   };
 
   return (
@@ -247,7 +252,7 @@ const CompaniesPage = () => {
         >
           {companies.map((company, index) => (
             <motion.div
-              key={index}
+              key={company.name}
               whileHover={{ y: -5 }}
               className={`${company.bgColor} rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl`}
             >
@@ -290,20 +295,23 @@ const CompaniesPage = () => {
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  onClick={() => toggleExpand(index)}
+                  onClick={() => toggleExpand(company.name)}
                   className="flex items-center text-blue-600 font-medium w-full justify-between py-2"
                 >
-                  <span>{expandedCompany === index ? 'Hide Services' : 'View Services'}</span>
-                  {expandedCompany === index ? <FiChevronUp /> : <FiChevronDown />}
+                  <span>{expandedCompany === company.name ? 'Hide Services' : 'View Services'}</span>
+                  {expandedCompany === company.name ? <FiChevronUp /> : <FiChevronDown />}
                 </motion.button>
 
-                {expandedCompany === index && (
-                  <motion.div 
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: 'auto' }}
-                    exit={{ opacity: 0, height: 0 }}
-                    className="mt-4 pt-4 border-t border-gray-200"
-                  >
+                <AnimatePresence mode="wait">
+                  {expandedCompany === company.name && (
+                    <motion.div 
+                      key="services"
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: 'auto' }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="mt-4 pt-4 border-t border-gray-200 overflow-hidden"
+                    >
                     <h4 className="font-bold text-gray-900 mb-2">Key Services:</h4>
                     <ul className="space-y-2">
                       {company.services.map((service, i) => (
@@ -330,8 +338,9 @@ const CompaniesPage = () => {
                         Visit Website <FaExternalLinkAlt className="ml-2" size={12} />
                       </motion.a>
                     )}
-                  </motion.div>
-                )}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             </motion.div>
           ))}
